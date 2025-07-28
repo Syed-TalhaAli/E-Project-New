@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/css/footer.css" />
+    <link rel="stylesheet" href="asset/css/header.css" />
+    <title>About Us</title>
+    <style>
+      body {
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+      }
+      .stack-area {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: white;
+        display: flex;
+      }
+      .left {
+        height: 100vh;
+        flex-basis: 50%;
+        position: sticky;
+        top: 0;
+        left: 0;
+      }
+      .right {
+        height: 100vh;
+        flex-basis: 50%;
+        position: sticky;
+        top: 0;
+      }
+
+      .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        align-items: center;
+        flex-direction: column;
+      }
+      .title {
+        width: 420px;
+        font-size: 84px;
+        font-family: "Sorts Mill Goudy", serif;
+        letter-spacing: 7px;
+        font-weight: bolder;
+        line-height: 90px;
+      }
+
+      .title span {
+        color: #a87735;
+      }
+      .sub-title {
+        width: 420px;
+        font-family: "Sorts Mill Goudy", serif;
+        font-size: 15px;
+        margin-top: 30px;
+      }
+
+      .card {
+        width: 350px;
+        height: 350px;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        position: absolute;
+        top: calc(50% - 175px);
+        left: calc(50% - 175px);
+        transition: 0.5s ease-in-out;
+      }
+      .card:nth-child(1) {
+        background: hsla(358, 85%, 68%, 1);
+
+        background: linear-gradient(
+          90deg,
+          hsla(358, 85%, 68%, 1) 0%,
+          hsla(41, 98%, 49%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+          90deg,
+          hsla(358, 85%, 68%, 1) 0%,
+          hsla(41, 98%, 49%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+          90deg,
+          hsla(358, 85%, 68%, 1) 0%,
+          hsla(41, 98%, 49%, 1) 100%
+        );
+
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F3696E", endColorstr="#F8A902", GradientType=1 );
+      }
+      .card:nth-child(2) {
+        background: hsla(23, 92%, 71%, 1);
+
+        background: linear-gradient(
+          90deg,
+          hsla(23, 92%, 71%, 1) 0%,
+          hsla(345, 43%, 54%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+          90deg,
+          hsla(23, 92%, 71%, 1) 0%,
+          hsla(345, 43%, 54%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+          90deg,
+          hsla(23, 92%, 71%, 1) 0%,
+          hsla(345, 43%, 54%, 1) 100%
+        );
+
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9A470", endColorstr="#BC556F", GradientType=1 );
+      }
+      .card:nth-child(3) {
+        background: hsla(154, 53%, 82%, 1);
+
+        background: linear-gradient(
+          90deg,
+          hsla(154, 53%, 82%, 1) 0%,
+          hsla(24, 88%, 65%, 1) 50%,
+          hsla(216, 56%, 16%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+          90deg,
+          hsla(154, 53%, 82%, 1) 0%,
+          hsla(24, 88%, 65%, 1) 50%,
+          hsla(216, 56%, 16%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+          90deg,
+          hsla(154, 53%, 82%, 1) 0%,
+          hsla(24, 88%, 65%, 1) 50%,
+          hsla(216, 56%, 16%, 1) 100%
+        );
+
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B8E9D4", endColorstr="#F4985A", GradientType=1 );
+      }
+      .card:nth-child(4) {
+        background: hsla(247, 23%, 40%, 1);
+
+        background: linear-gradient(
+          90deg,
+          hsla(247, 23%, 40%, 1) 0%,
+          hsla(42, 100%, 66%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+          90deg,
+          hsla(247, 23%, 40%, 1) 0%,
+          hsla(42, 100%, 66%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+          90deg,
+          hsla(247, 23%, 40%, 1) 0%,
+          hsla(42, 100%, 66%, 1) 100%
+        );
+
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#544F7D", endColorstr="#FFCB50", GradientType=1 );
+      }
+
+      .card {
+        box-sizing: border-box;
+        padding: 35px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .sub {
+        font-family: poppins;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .content {
+        font-family: "Sorts Mill Goudy", serif;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 54px;
+      }
+
+      /*Styling for the card content ends here...*/
+
+      .away {
+        transform-origin: bottom left;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header  -->
+    <div class="collection_wrapper">
+      <div class="close_collection">
+        <strong class="closeCol">&#x2715;</strong>
+      </div>
+      <div class="collection_card1">
+        <ul>
+          <li data-type="earrings">Earrings</li>
+          <li data-type="rings">Rings</li>
+          <li data-type="necklaces">Necklaces</li>
+          <li data-type="bracelets">Bracelets</li>
+        </ul>
+      </div>
+      <div class="collection_card2">
+        <h2>Earings</h2>
+        <div class="collection_images">
+          <img src="asset/images/category/p1.jpg" id="product-image" alt="" />
+        </div>
+        <div class="collection_des">
+          <p>Starting Form : &nbsp; <strong>$169</strong></p>
+          <a href="#" class="view_collection">View Collection</a>
+        </div>
+      </div>
+      <div class="collection_card3">
+        <img src="asset/images/category/p8.webp" class="category_img" alt="" />
+      </div>
+    </div>
+
+    <header id="hero">
+      <div class="logo">
+        <a href="index.html"><img src="asset/images/logo/logo.PNG" alt="" /></a>
+      </div>
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">SPECIAL OFFER</a></li>
+            <li><a href="">NEW ARRIVAL</a></li>
+            <li><a href="">PRODUCTS</a></li>
+            <li><a href="">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cart">
+        <div class="search">
+          <div class="dropdown">
+            <button class="dropbtn" id="col-type">CATEGORY</button>
+          </div>
+        </div>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+
+    <div class="stack-area">
+      <div class="left">
+        <div class="title">About <span>Crystal Nest</span></div>
+        <div class="sub-title">
+          Our mission is to offer ethically sourced, high-quality gemstones that
+          not only enhance personal style but also embody healing energy and
+          inner harmony. Each piece in our collection is meticulously crafted by
+          skilled artisans, blending traditional craftsmanship with contemporary
+          design. <br /><br />
+          At Crystal Nest, we believe that every crystal tells a story. Whether
+          you're seeking a unique accessory, a meaningful gift, or a personal
+          talisman, our creations are designed to inspire and connect.
+          <br /><br />
+          Join us on a journey where luxury meets authenticity, and beauty
+          aligns with purpose.
+          <br />
+        </div>
+      </div>
+      <div class="right">
+        <div class="card">
+          <div class="content">Our crystals are ethically sourced and carefully crafted to bring harmony, style, and meaning to your life.</div>
+        </div>
+        <div class="card">
+          <div class="content">Each piece tells a story—of energy, intention, and elegance straight from the heart of the Earth.</div>
+        </div>
+        <div class="card">
+          <div class="content">From healing to home décor, our crystal creations blend natural power with refined design.</div>
+        </div>
+        <div class="card">
+          <div class="content">Crystal Nest brings you curated gems to cleanse, inspire, and beautify your everyday life.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- footer  -->
+
+    <footer>
+      <div class="footer-row">
+        <div class="footer-col">
+          <img
+            src="asset/images/logo/logo.PNG"
+            alt="brand logo"
+            class="footer-heading"
+          />
+          <p class="slogan">
+            Distinctive jewellery, designed for those who cherish quality and
+            elegance.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Shop Online</h4>
+          <ul class="footerLinks">
+            <li><a href="#">Jewellery Materials</a></li>
+            <li><a href="#">Sizing Children's jewellery</a></li>
+            <li><a href="#">Delivery & Returns</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Categories</h4>
+          <ul class="footerLinks">
+            <li><a href="#">Rings</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Earrings</a></li>
+            <li><a href="#">Gold Buckle</a></li>
+            <li><a href="#">Bracelets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Information</h4>
+          <ul class="footerLinks">
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Need Help?</h4>
+          <p>
+            <strong>Head Office:</strong> 785 15h Street, Office 478, Karachi,
+            Pakistan
+          </p>
+          <p><strong>Tel:</strong> +92333-2991877</p>
+          <p><strong>Email: </strong> contact.crystalnest@gmail.com</p>
+          <div class="footer-icons">
+            <h4>Social</h4>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footerCopyWriteSec">
+        <p>Crystal Nest © 2025. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      let cards = document.querySelectorAll(".card");
+
+      let stackArea = document.querySelector(".stack-area");
+
+      function rotateCards() {
+        let angle = 0;
+        cards.forEach((card, index) => {
+          if (card.classList.contains("away")) {
+            card.style.transform = `translateY(-120vh) rotate(-48deg)`;
+          } else {
+            card.style.transform = ` rotate(${angle}deg)`;
+            angle = angle - 10;
+            card.style.zIndex = cards.length - index;
+          }
+        });
+      }
+
+      rotateCards();
+
+      window.addEventListener("scroll", () => {
+        let distance = window.innerHeight * 0.5;
+
+        let topVal = stackArea.getBoundingClientRect().top;
+
+        let index = -1 * (topVal / distance + 1);
+
+        index = Math.floor(index);
+
+        for (i = 0; i < cards.length; i++) {
+          if (i <= index) {
+            cards[i].classList.add("away");
+          } else {
+            cards[i].classList.remove("away");
+          }
+        }
+        rotateCards();
+      });
+    </script>
+  </body>
+</html>

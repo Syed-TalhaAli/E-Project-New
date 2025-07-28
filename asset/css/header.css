@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none !important;
+}
+
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  cursor: none;
+  position: relative;
+}
+
+:root {
+  --first-color: hsl(82, 60%, 28%);
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --body-color: hsl(0, 0%, 95%);
+  --container-color: hsl(0, 0%, 100%);
+  --body-font: "Poppins", sens-serif;
+  --h2-font-size: 1.25rem;
+  --small-font-size: 0.813rem;
+  --white-text: #ffffff;
+  --golden-text: #deb647;
+  --brown-color: #a87735;
+  --gray-text: #f6f6f6;
+  --black-text: #000;
+  --icon-size: 1.313rem;
+}
+
+::selection {
+  background: var(--brown-color);
+  color: var(--white-text);
+}
+
+.top-link{
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color: var(--brown-color);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  font-size: 30px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+
+/* .cursor {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--golden-text);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.1s linear;
+  z-index: 1000000000000000000;
+}
+
+.cursor div {
+  width: 20%;
+  height: 20%;
+  background: var(--golden-text);
+  border-radius: 50%;
+} */
+
+.welcome-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: 20000;
+  overflow: hidden;
+  transition: all 1s linear;
+  object-fit: cover;
+}
+
+.welcome-wrapper.loaderActive {
+  opacity: 0;
+  filter: blur(50px);
+  transform: translateY(-200%);
+}
+
+.welcome-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.main-screen {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.main-screen > .main-screen_sec {
+  height: calc(100% - 80px) !important;
+  width: 100% !important;
+}
+
+section {
+  width: 100%;
+  max-height: 100vh;
+}
+
+/* category click  */
+
+.collection_wrapper {
+  position: fixed;
+  inset: 0;
+  background: var(--white-text);
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  scale: 0;
+  transition: all 0.5s;
+  z-index: 10000000;
+}
+
+.collection_wrapper.colActive {
+  opacity: 1;
+  scale: 1;
+}
+
+.collection_wrapper .collection_card1 {
+  min-width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.collection_card1 ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 1.5rem;
+}
+
+.collection_card2 {
+  min-height: 30%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.collection_card2 h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Sorts Mill Goudy", serif;
+}
+
+.collection_card2 .collection_images {
+  margin-top: 3rem;
+}
+
+.collection_card2 .collection_images img {
+  mix-blend-mode: darken;
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.collection_card2 .collection_des {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.collection_card2 .collection_des p {
+  font-size: 28px;
+  font-family: "Sorts Mill Goudy", serif;
+}
+
+.collection_des a {
+  padding: 14px 25px;
+  background: white;
+  border: 1px solid #ccc;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.collection_card3 {
+  min-height: 45%;
+  height: 100%;
+}
+
+.collection_card3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.close_collection {
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+/* category click end  */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 50px;
+  background: var(--black-text);
+  z-index: 10001;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+.logo img {
+  width: 9rem;
+  height: auto;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px;
+}
+
+.navbar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: var(--gray-text);
+}
+
+.navbar ul li a:hover {
+  text-decoration: dashed;
+}
+
+.cart i {
+  font-size: 30px;
+  color: var(--brown-color);
+  display: flex;
+  cursor: pointer;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Category  */
+
+.dropbtn {
+  background-color: #a87735;
+  font-weight: bold;
+  padding: 0 16px;
+  font-size: 1rem;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
