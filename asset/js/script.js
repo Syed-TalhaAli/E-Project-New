@@ -107,6 +107,32 @@ window.addEventListener("scroll", () => {
   });
 });
 
+const box5 = document.querySelectorAll(".move-right-new");
+
+window.addEventListener("scroll", () => {
+  box5.forEach((box) => {
+    const rect = box.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      box.classList.add("show");
+    } else {
+      box.classList.remove("show");
+    }
+  });
+});
+
+const box6 = document.querySelectorAll(".banner-1");
+
+window.addEventListener("scroll", () => {
+  box6.forEach((box) => {
+    const rect = box.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      box.classList.add("show");
+    } else {
+      box.classList.remove("show");
+    }
+  });
+});
+
 const box = document.querySelectorAll(".move-right");
 
 window.addEventListener("scroll", () => {
@@ -406,85 +432,85 @@ const products = {
   diamond: [
     {
       img: "asset/images/collection/diamond/ring.webp",
-      name: "Diamond Ring",
+      name: "Ring",
       price: "$110.00",
     },
     {
       img: "asset/images/collection/diamond/earrings.jpg",
-      name: "Diamond Ring",
+      name: "Earrings",
       price: "$110.00",
     },
     {
       img: "asset/images/collection/diamond/necklace.jpg",
-      name: "Diamond Ring",
+      name: "Necklace",
       price: "$110.00",
     },
   ],
   amber: [
     {
       img: "asset/images/collection/amber/ring.webp",
-      name: "Amber Ring",
+      name: "Ring",
       price: "$90.00",
     },
     {
       img: "asset/images/collection/amber/bracelet.webp",
-      name: "Amber Ring",
+      name: "Bracelet",
       price: "$95.00",
     },
     {
       img: "asset/images/collection/amber/pendant.jpg",
-      name: "Amber Ring",
+      name: "Pendant",
       price: "$99.00",
     },
   ],
   amethyst: [
     {
       img: "asset/images/collection/amethyst/bracelet.jpg",
-      name: "Amethyst Ring",
+      name: "Bracelet",
       price: "$85.00",
     },
     {
       img: "asset/images/collection/amethyst/necklace.webp",
-      name: "Amethyst Ring",
+      name: "Necklace",
       price: "$88.00",
     },
     {
       img: "asset/images/collection/amethyst/ring.webp",
-      name: "Amethyst Ring",
+      name: "Ring",
       price: "$89.00",
     },
   ],
   ruby: [
     {
       img: "asset/images/collection/ruby/earring.avif",
-      name: "Ruby Ring",
+      name: "Earrings",
       price: "$120.00",
     },
     {
       img: "asset/images/collection/ruby/necklace.webp",
-      name: "Ruby Ring",
+      name: "Necklace",
       price: "$125.00",
     },
     {
       img: "asset/images/collection/ruby/ring.jpg",
-      name: "Ruby Ring",
+      name: "Ring",
       price: "$130.00",
     },
   ],
   turquoise: [
     {
       img: "asset/images/collection/turquoise/ring2.jpg",
-      name: "Turquoise Ring",
+      name: "Ring",
       price: "$105.00",
     },
     {
       img: "asset/images/collection/turquoise/pendant.jpg",
-      name: "Turquoise Ring",
+      name: "Pendant",
       price: "$108.00",
     },
     {
       img: "asset/images/collection/turquoise/ring.jpg",
-      name: "Turquoise Ring",
+      name: "Ring",
       price: "$110.00",
     },
   ],

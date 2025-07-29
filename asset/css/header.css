@@ -5,19 +5,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: none !important;
+  
 }
 
-html {
-  overflow-x: hidden !important;
-  scroll-behavior: smooth;
-}
-
-body {
-  overflow-x: hidden;
-  cursor: none;
-  position: relative;
-}
 
 :root {
   --first-color: hsl(82, 60%, 28%);
@@ -41,25 +31,7 @@ body {
   color: var(--white-text);
 }
 
-.top-link{
-  position: fixed;
-  bottom: 2%;
-  right: 2%;
-  background-color: var(--brown-color);
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10000;
-  font-size: 30px;
-  color: #ccc;
-  text-decoration: none;
-}
-
-
-/* .cursor {
+.cursor {
   width: 50px;
   height: 50px;
   border: 2px solid var(--golden-text);
@@ -78,7 +50,24 @@ body {
   height: 20%;
   background: var(--golden-text);
   border-radius: 50%;
-} */
+}
+
+.top-link{
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color: var(--brown-color);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  font-size: 30px;
+  color: #ccc;
+  text-decoration: none;
+}
 
 .welcome-wrapper {
   position: fixed;
