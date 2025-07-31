@@ -17,10 +17,11 @@
 
 
 @media (min-width: 1199px) and (max-width: 1220px) {
-    .move-right-new, .move-left {
+    .move-right-new {
         font-size: 9rem;
         text-align: center;
     }
+
 }
 /* 1210px screen */
 @media (min-width: 1129px) and (max-width: 1210px) {
