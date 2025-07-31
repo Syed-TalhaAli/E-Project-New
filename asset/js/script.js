@@ -84,9 +84,9 @@ items.forEach((item) => {
 
 const wellcomeWrapper = document.querySelector(".welcome-wrapper");
 
-setTimeout(() => {
-  wellcomeWrapper.classList.add("loaderActive");
-}, 8000);
+// setTimeout(() => {
+//   wellcomeWrapper.classList.add("loaderActive");
+// }, 8000);
 
 // setTimeout(() => {
 //   resetVideoAutoSlide();
@@ -200,62 +200,62 @@ window.addEventListener("scroll", () => {
 
 // ------------------ Video Slideshow ------------------
 
-const videos = document.querySelectorAll(".slide-container video");
-const next = document.querySelector(".next");
-const prev = document.querySelector(".prev");
-const dots = document.querySelectorAll(".dot");
+// const videos = document.querySelectorAll(".slide-container video");
+// const next = document.querySelector(".next");
+// const prev = document.querySelector(".prev");
+// const dots = document.querySelectorAll(".dot");
 
-let counter = 0;
+// let counter = 0;
 
-function updateSlide(index, shouldRestart = false) {
-  videos.forEach((vid, i) => {
-    vid.pause();
-    if (shouldRestart || i !== index) {
-      vid.currentTime = 0;
-    }
-    vid.classList.remove("active");
-    dots[i].classList.remove("active");
-  });
+// function updateSlide(index, shouldRestart = false) {
+//   videos.forEach((vid, i) => {
+//     vid.pause();
+//     if (shouldRestart || i !== index) {
+//       vid.currentTime = 0;
+//     }
+//     vid.classList.remove("active");
+//     dots[i].classList.remove("active");
+//   });
 
-  videos[index].classList.add("active");
-  dots[index].classList.add("active");
-  videos[index].play();
-}
+//   videos[index].classList.add("active");
+//   dots[index].classList.add("active");
+//   videos[index].play();
+// }
 
-function goNext() {
-  counter = (counter + 1) % videos.length;
-  updateSlide(counter);
-}
+// function goNext() {
+//   counter = (counter + 1) % videos.length;
+//   updateSlide(counter);
+// }
 
-function goPrev() {
-  counter = (counter - 1 + videos.length) % videos.length;
-  updateSlide(counter);
-}
+// function goPrev() {
+//   counter = (counter - 1 + videos.length) % videos.length;
+//   updateSlide(counter);
+// }
 
-next.addEventListener("click", () => {
-  goNext();
-  resetVideoAutoSlide();
-});
+// next.addEventListener("click", () => {
+//   goNext();
+//   resetVideoAutoSlide();
+// });
 
-prev.addEventListener("click", () => {
-  goPrev();
-  resetVideoAutoSlide();
-});
+// prev.addEventListener("click", () => {
+//   goPrev();
+//   resetVideoAutoSlide();
+// });
 
-dots.forEach((dot) => {
-  dot.addEventListener("click", () => {
-    counter = parseInt(dot.getAttribute("data-index"));
-    updateSlide(counter, true);
-    resetVideoAutoSlide();
-  });
-});
+// dots.forEach((dot) => {
+//   dot.addEventListener("click", () => {
+//     counter = parseInt(dot.getAttribute("data-index"));
+//     updateSlide(counter, true);
+//     resetVideoAutoSlide();
+//   });
+// });
 
-let videoAutoSlide = setInterval(goNext, 5000);
+// let videoAutoSlide = setInterval(goNext, 5000);
 
-function resetVideoAutoSlide() {
-  clearInterval(videoAutoSlide);
-  videoAutoSlide = setInterval(goNext, 5000);
-}
+// function resetVideoAutoSlide() {
+//   clearInterval(videoAutoSlide);
+//   videoAutoSlide = setInterval(goNext, 5000);
+// }
 
 // ------------------ Hero Section Slideshow ------------------
 
@@ -532,11 +532,11 @@ function renderCategory(category) {
     categoryCard.appendChild(card);
   });
 
-  // Add "View More" button
-  const viewMore = document.createElement("div");
-  viewMore.className = "view-more";
-  viewMore.innerHTML = `<button>View More &#10095;</button>`;
-  categoryCard.appendChild(viewMore);
+  // // Add "View More" button
+  // const viewMore = document.createElement("div");
+  // viewMore.className = "view-more";
+  // viewMore.innerHTML = `<button>View More &#10095;</button>`;
+  // categoryCard.appendChild(viewMore);
 }
 
 // Event listeners for category clicks

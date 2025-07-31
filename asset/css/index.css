@@ -122,7 +122,7 @@ body {
 
 section {
   width: 100%;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 /* category click  */
@@ -251,9 +251,14 @@ header {
   height: auto;
 }
 
+.sm-logo {
+  display: none;
+}
+
 .navbar {
   width: 100%;
   padding: 10px;
+  transition: all 0.7s;
 }
 
 .navbar nav ul {
@@ -262,6 +267,16 @@ header {
   justify-content: center;
   list-style: none;
   gap: 20px;
+}
+
+#noneMenu, #closeMenu{
+  display: none;
+}
+
+#closeMenu {
+  font-size: 30px;
+  color: var(--brown-color);
+  cursor: pointer;
 }
 
 .navbar nav ul li a {
