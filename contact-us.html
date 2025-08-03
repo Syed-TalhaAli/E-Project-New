@@ -10,10 +10,12 @@
         <link rel="stylesheet" href="asset/css/footer.css">
         <link rel="stylesheet" href="asset/css/header.css">
         <link rel="stylesheet" href="asset/css/contact-us.css">
+        <link rel="stylesheet" href="asset/css/index.css">
+        <link rel="stylesheet" href="asset/css/media.css">
     <title>Document</title>
 </head>
 <body>
-            <div class="cursor">
+        <div class="cursor">
             <div></div>
         </div>
         
@@ -61,6 +63,12 @@
           </div>
           <div class="navbar">
             <nav>
+              <a href="index.html"
+                ><img
+                  src="asset/images/logo/logo.PNG"
+                  class="sm-logo"
+                  alt="logo"
+              /></a>
               <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="">NEW ARRIVAL</a></li>
@@ -74,6 +82,7 @@
 
           <div class="cart">
             <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-bars" id="noneMenu"></i>
           </div>
         </header>
 
@@ -106,6 +115,13 @@
             </form>
           </div>
         </div>
+      </section>
+
+      <section>
+        <div class="map-container">
+            <h3>Reach Us</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0618024733076!2d67.11432547493415!3d24.92996444247361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338c0f3713f79%3A0xd93ccefc56ffe37e!2sAptech%20University%20Road%20Center!5e0!3m2!1sen!2s!4v1754240564996!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </section>
 
       <!-- footer section -->
@@ -174,33 +190,7 @@
       </footer>
     </div>
 
-    <script>
-        const wrapper = document.querySelector(".wrapper");
-const cursor = document.querySelector(".cursor");
-
-let mouseX = 0;
-let mouseY = 0;
-
-let currentX = 0;
-let currentY = 0;
-
-wrapper.addEventListener("mousemove", (e) => {
-  const rect = wrapper.getBoundingClientRect();
-  mouseX = e.clientX - rect.left;
-  mouseY = e.clientY - rect.top;
-});
-
-function animate() {
-  currentX += (mouseX - currentX) * 0.2;
-  currentY += (mouseY - currentY) * 0.2;
-
-  cursor.style.left = currentX + "px";
-  cursor.style.top = currentY + "px";
-
-  requestAnimationFrame(animate);
-}
-
-animate();
-    </script>
+    <script src="asset/js/script.js"></script>
+    <script src="asset/js/utility.js"></script>
 </body>
 </html>

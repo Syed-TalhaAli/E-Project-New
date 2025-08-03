@@ -57,7 +57,7 @@
   align-items: center;
   z-index: 10000;
   font-size: 30px;
-  color: #ccc;
+  color: var(--white-text);
   text-decoration: none;
 }
 
@@ -103,7 +103,6 @@
 
 section {
   width: 100%;
-  max-height: 100vh;
 }
 
 /* category click  */
@@ -180,11 +179,11 @@ section {
 
 .collection_des a {
   padding: 14px 25px;
-  background: white;
+  background: var(--white-text);
   border: 1px solid #ccc;
   width: fit-content;
   text-decoration: none;
-  color: black;
+  color: var(--black-text);
   font-weight: bold;
 }
 
@@ -247,7 +246,7 @@ header {
 
 .navbar nav ul li a {
   text-decoration: none;
-  color: var(--gray-text);
+  color: var(--white-text);
 }
 
 .navbar ul li a:hover {
@@ -271,7 +270,7 @@ header {
 /* Category  */
 
 .dropbtn {
-  background-color: #a87735;
+  background-color: var(--brown-color);
   font-weight: bold;
   padding: 0 16px;
   font-size: 1rem;

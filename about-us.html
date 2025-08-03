@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="asset/css/footer.css" />
     <link rel="stylesheet" href="asset/css/header.css" />
     <link rel="stylesheet" href="asset/css/about-us.css" />
+    <link rel="stylesheet" href="asset/css/index.css" />
+    <link rel="stylesheet" href="asset/css/media.css">
     <title>About Us</title>
   </head>
   <body>
@@ -59,70 +61,108 @@
         </div>
         <div class="navbar">
           <nav>
+            <a href="index.html"
+                ><img
+                  src="asset/images/logo/logo.PNG"
+                  class="sm-logo"
+                  alt="logo"
+              /></a>
             <ul>
               <li><a href="index.html">HOME</a></li>
-              <li><a href="">NEW ARRIVAL</a></li>
-              <li><a href="">SPECIAL OFFER</a></li>
-              <li><a href="">PRODUCTS</a></li>
+              <li><a href="new_arrival.html">NEW ARRIVAL</a></li>
+              <li><a href="special-offers.html">SPECIAL OFFER</a></li>
+              <li><a href="product-card.html">PRODUCTS</a></li>
               <li><a href="about-us.html">ABOUT US</a></li>
-                <li><a href="contact-us.html">CONTACT US</a></li>
+              <li><a href="contact-us.html">CONTACT US</a></li>
             </ul>
           </nav>
         </div>
 
         <div class="cart">
           <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-bars" id="noneMenu"></i>
+
         </div>
       </header>
 
-      <div class="stack-area-wrapper">
-        <div class="stack-area">
+      <section>
+        <div class="aboutus-banner">
+          <img src="asset/images/about-us/Aboutus 01.png" alt="" />
+        </div>
+      </section>
+
+      <section>
+        <div class="about-us-detail-grid">
+          <div class="about-us-img">
+            <img src="asset/images/about-us/img-1.webp" alt="Jewelry Image 1" />
+          </div>
+
+          <div class="about-heading">
+            <h2>Modern and eye-catching</h2>
+            <br />
+            <p>
+              Inspired by the rebellious spirit of America and the intrigue of
+              unwavering authenticity, R13 launched in Fall 2009. At the
+              forefront of design, R13 cuts avant-garde silhouettes such as the
+              skinny legging and harem pant from Italian and Turkish denim
+              produced in Castelfranco, Italy. Pure indigo casting, quality
+              stretch and machine hand mending give the jeans their superior
+              shape.
+            </p>
+            <br />
+            <p>#rings #necklaces #bangles #earrings #crystals</p>
+          </div>
+
+          <div class="about-heading">
+            <h2>Exciting and innovative</h2>
+            <p>
+              Inspired by the rebellious spirit of America and the intrigue of
+              unwavering authenticity, R13 launched in Fall 2009. At the
+              forefront of design, R13 cuts avant-garde silhouettes such as the
+              skinny legging and harem pant from Italian and Turkish denim
+              produced in Castelfranco, Italy. Pure indigo casting, quality
+              stretch and machine hand mending give the jeans their superior
+              shape and an authentic... <br> <br> Inspired by the rebellious spirit of
+              America and the intrigue of unwavering authenticity, R13 launched
+              in Fall 2009. At the forefront of design, R13 cuts avant-garde
+              silhouettes such as the skinny legging and harem pant from Italian
+              and Turkish denim produced in Castelfranco, Italy. Pure indigo
+              casting, quality stretch and machine hand mending give the jeans
+              their superior shape...
+            </p>
+          </div>
+
+          <div class="img">
+            <img src="asset/images/about-us/img-1.webp" alt="Jewelry Image 2" />
+          </div>
+        </div>
+      </section>
+
+      <!-- <div class="stack-area-wrapper">
+
+        <div class="main-img-1">
+          <img src="asset/images/about-us/Aboutus 01.png" alt="">
+        </div>
           <div class="left">
-            <div class="title">About <span>Crystal Nest</span></div>
+            <div class="title">Our Story</div>
             <div class="sub-title">
-              Our mission is to offer ethically sourced, high-quality gemstones
-              that not only enhance personal style but also embody healing
-              energy and inner harmony. Each piece in our collection is
-              meticulously crafted by skilled artisans, blending traditional
-              craftsmanship with contemporary design. <br /><br />
-              At Crystal Nest, we believe that every crystal tells a story.
-              Whether you're seeking a unique accessory, a meaningful gift, or a
-              personal talisman, our creations are designed to inspire and
-              connect.
+              At Crystal Nest, our journey began with a love for timeless
+              elegance. Each design is inspired by heritage and handcrafted with
+              care. We believe jewelry is more than adornment, it’s a
+              reflection of you. From everyday grace to cherished moments, we
+              craft stories in sparkle.
               <br /><br />
               Join us on a journey where luxury meets authenticity, and beauty
               aligns with purpose.
               <br />
             </div>
           </div>
-          <div class="right">
-            <div class="card">
-              <div class="content">
-                Our crystals are ethically sourced and carefully crafted to
-                bring harmony, style, and meaning to your life.
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                Each piece tells a story—of energy, intention, and elegance
-                straight from the heart of the Earth.
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                From healing to home décor, our crystal creations blend natural
-                power with refined design.
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                Crystal Nest brings you curated gems to cleanse, inspire, and
-                beautify your everyday life.
-              </div>
-            </div>
-          </div>
+        
+
+        <div class="right-side">
+          <img src="asset/images/about-us/About-us.png" alt="">
         </div>
-      </div>
+      </div> -->
 
       <!-- footer  -->
       <footer>
@@ -190,118 +230,8 @@
       </footer>
     </div>
 
-    <script>
-      const cursor = document.querySelector(".cursor");
-      const wrapper = document.querySelector(".wrapper");
-
-      let mouseX = 0;
-      let mouseY = 0;
-
-      let currentX = 0;
-      let currentY = 0;
-
-      wrapper.addEventListener("mousemove", (e) => {
-        const rect = wrapper.getBoundingClientRect();
-        mouseX = e.clientX - rect.left;
-        mouseY = e.clientY - rect.top;
-      });
-
-      function animate() {
-        currentX += (mouseX - currentX) * 0.2;
-        currentY += (mouseY - currentY) * 0.2;
-
-        cursor.style.left = currentX + "px";
-        cursor.style.top = currentY + "px";
-
-        requestAnimationFrame(animate);
-      }
-
-      animate();
-
-      const cards = document.querySelectorAll(".card");
-      const stackWrapper = document.querySelector(".stack-area-wrapper");
-      const stackArea = document.querySelector(".stack-area");
-
-      function rotateCards() {
-        let angle = 0;
-        cards.forEach((card, index) => {
-          if (card.classList.contains("away")) {
-            card.style.transform = `translateY(-120vh) rotate(-48deg)`;
-          } else {
-            card.style.transform = `rotate(${angle}deg)`;
-            card.style.zIndex = cards.length - index;
-            angle -= 10;
-          }
-        });
-      }
-
-      rotateCards();
-
-      window.addEventListener("scroll", () => {
-        const wrapperTop = stackWrapper.getBoundingClientRect().top;
-        const scrollUnit = window.innerHeight / 2;
-        let index = Math.floor(-wrapperTop / scrollUnit);
-
-        index = Math.max(0, Math.min(cards.length, index));
-
-        cards.forEach((card, i) => {
-          card.classList.toggle("away", i < index);
-        });
-
-        rotateCards();
-      });
-
-      // category click
-
-      const collectionOpen = document.getElementById("col-type");
-      const collectionWrapper = document.querySelector(".collection_wrapper");
-      const collectionClose = document.querySelector(".closeCol");
-      const categoryImg = document.querySelector(".category_img");
-
-      collectionOpen.addEventListener("click", () => {
-        collectionWrapper.classList.add("colActive");
-      });
-
-      collectionClose.addEventListener("click", () => {
-        collectionWrapper.classList.remove("colActive");
-      });
-
-      const items = document.querySelectorAll(".collection_card1 li");
-      const title = document.querySelector(".collection_card2 h2");
-      const productImage = document.getElementById("product-image");
-      const collection_card2 = document.querySelector(".collection_card2");
-
-      const images = {
-        earrings: "asset/images/category/p1.jpg",
-        rings: "asset/images/category/p3.webp",
-        necklaces: "asset/images/category/p4.webp",
-        bracelets: "asset/images/category/p5.webp",
-      };
-
-      items.forEach((item) => {
-        item.addEventListener("click", () => {
-          const type = item.getAttribute("data-type");
-
-          if (type === "earrings") {
-            categoryImg.src = "asset/images/category/p8.webp";
-          } else if (type === "rings") {
-            categoryImg.src = "asset/images/category/p6.webp";
-          } else if (type === "necklaces") {
-            categoryImg.src = "asset/images/category/p2.webp";
-          } else {
-            categoryImg.src = "asset/images/category/p7.jpg";
-          }
-
-          collection_card2.classList.remove("smoothActive");
-          setTimeout(() => {
-            title.textContent = type.charAt(0).toUpperCase() + type.slice(1);
-            productImage.src = images[type];
-            collection_card2.classList.add("smoothActive");
-          }, 10);
-        });
-      });
-
-      // category click end
-    </script>
+    <script src="asset/js/script.js"></script>
+    <script src="asset/js/utility.js"></script>
+    
   </body>
 </html>

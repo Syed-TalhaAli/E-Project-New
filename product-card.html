@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="asset/css/header.css" />
+    <link rel="stylesheet" href="asset/css/category.css" />
+    <link rel="stylesheet" href="asset/css/footer.css" />
+    <link rel="stylesheet" href="asset/css/product-card.css" />
+    <link rel="stylesheet" href="asset/css/index.css" />
+    <link rel="stylesheet" href="asset/css/media.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="cursor">
+        <div></div>
+      </div>
+
+      <div class="main-screen">
+        <!-- main screen -->
+
+        <!-- open category toggle -->
+        <div class="collection_wrapper">
+          <div class="close_collection">
+            <strong class="closeCol">&#x2715;</strong>
+          </div>
+          <div class="collection_card1">
+            <ul>
+              <li data-type="earrings">Earrings</li>
+              <li data-type="rings">Rings</li>
+              <li data-type="necklaces">Necklaces</li>
+              <li data-type="bracelets">Bracelets</li>
+            </ul>
+          </div>
+          <div class="collection_card2">
+            <h2>Earings</h2>
+            <div class="collection_images">
+              <img
+                src="asset/images/category/p1.jpg"
+                id="product-image"
+                alt=""
+              />
+            </div>
+            <div class="collection_des">
+              <p>Starting Form : &nbsp; <strong>$169</strong></p>
+              <a href="#" class="view_collection">View Collection</a>
+            </div>
+          </div>
+          <div class="collection_card3">
+            <img
+              src="asset/images/category/p8.webp"
+              class="category_img"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- close category toggle -->
+
+        <!-- header start -->
+        <header id="hero">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="asset/images/logo/logo.PNG" alt=""
+            /></a>
+          </div>
+          <div class="navbar">
+            <i class="fa-solid fa-xmark" id="closeMenu"></i>
+            <nav>
+              <a href="index.html"
+                ><img
+                  src="asset/images/logo/logo.PNG"
+                  class="sm-logo"
+                  alt="logo"
+              /></a>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="new_arrival.html">NEW ARRIVAL</a></li>
+                <li><a href="special-offers.html">SPECIAL OFFER</a></li>
+                <li><a href="">PRODUCTS</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="cart">
+            <div class="search">
+              <div class="dropdown">
+                <button class="dropbtn" id="col-type">CATEGORY</button>
+              </div>
+            </div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-bars" id="noneMenu"></i>
+          </div>
+        </header>
+        <!-- header start -->
+
+        <!-- Hero section start -->
+        <section class="main-screen_sec">
+          <img src="" alt="" />
+        </section>
+        <!-- Hero section start -->
+      </div>
+
+      <section>
+        <div class="products-wrapper">
+          <div class="sidebar">
+            <h2 class="heading">Category</h2>
+
+            <ul class="menu">
+              <li>
+                <span class="menu-item toggle" data-target="diamond"
+                  >Diamond<span class="icon">+</span></span
+                >
+                <ul class="submenu" id="diamond">
+                  <li><a href="">Ring</a></li>
+                  <li><a href="">Necklace</a></li>
+                  <li><a href="">Pendant</a></li>
+                  <li><a href="">Earrings</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="menu-item toggle active" data-target="ruby"
+                  >Ruby<span class="icon">−</span></span
+                >
+                <ul class="submenu open" id="ruby">
+                  <li><a href="">Ring</a></li>
+                  <li><a href="">Necklace</a></li>
+                  <li><a href="">Pendant</a></li>
+                  <li><a href="">Earrings</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="menu-item toggle" data-target="amber"
+                  >Amber<span class="icon">+</span></span
+                >
+                <ul class="submenu" id="amber">
+                  <li><a href="">Ring</a></li>
+                  <li><a href="">Necklace</a></li>
+                  <li><a href="">Pendant</a></li>
+                  <li><a href="">Earrings</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="menu-item toggle" data-target="amethyst"
+                  >Amethyst<span class="icon">+</span></span
+                >
+                <ul class="submenu" id="amethyst">
+                  <li><a href="">Ring</a></li>
+                  <li><a href="">Necklace</a></li>
+                  <li><a href="">Pendant</a></li>
+                  <li><a href="">Earrings</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="menu-item toggle" data-target="turquoise"
+                  >Turquoise<span class="icon">+</span></span
+                >
+                <ul class="submenu" id="turquoise">
+                  <li><a href="">Ring</a></li>
+                  <li><a href="">Necklace</a></li>
+                  <li><a href="">Pendant</a></li>
+                  <li><a href="">Earrings</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <hr />
+          </div>
+
+          <div class="bx-container">
+            <div class="card">
+              <div class="imageBx">
+                <img
+                  src="asset/images/All Products/Amber/Bracelet/amber 1.png"
+                  alt=""
+                />
+              </div>
+              <div class="contentBx">
+                <h2>Diamond Pendant</h2>
+                <div class="size">
+                  <h3>Size :</h3>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="imageBx">
+                <img
+                  src="asset/images/All Products/Amber/Bracelet/amber 2.png"
+                  alt=""
+                />
+              </div>
+              <div class="contentBx">
+                <h2>Diamond Pendant</h2>
+                <div class="size">
+                  <h3>Size :</h3>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="imageBx">
+                <img
+                  src="asset/images/All Products/Amber/Bracelet/amber 3.png"
+                  alt=""
+                />
+              </div>
+              <div class="contentBx">
+                <h2>Diamond Pendant</h2>
+                <div class="size">
+                  <h3>Size :</h3>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="imageBx">
+                <img
+                  src="asset/images/All Products/Amber/Bracelet/amber 4.png"
+                  alt=""
+                />
+              </div>
+              <div class="contentBx">
+                <h2>Diamond Pendant</h2>
+                <div class="size">
+                  <h3>Size :</h3>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="imageBx">
+                <img
+                  src="asset/images/special offers/Ruby-Pendant-removebg-preview.png"
+                  alt=""
+                />
+              </div>
+              <div class="contentBx">
+                <h2>Diamond Pendant</h2>
+                <div class="size">
+                  <h3>Size :</h3>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="imageBx">
+                <img
+                  src="asset/images/special offers/Ruby-Pendant-removebg-preview.png"
+                  alt=""
+                />
+              </div>
+              <div class="contentBx">
+                <h2>Diamond Pendant</h2>
+                <div class="size">
+                  <h3>Size :</h3>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="imageBx">
+                <img
+                  src="asset/images/special offers/Ruby-Pendant-removebg-preview.png"
+                  alt=""
+                />
+              </div>
+              <div class="contentBx">
+                <h2>Diamond Pendant</h2>
+                <div class="size">
+                  <h3>Size :</h3>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="imageBx">
+                <img
+                  src="asset/images/special offers/Ruby-Pendant-removebg-preview.png"
+                  alt=""
+                />
+              </div>
+              <div class="contentBx">
+                <h2>Diamond Pendant</h2>
+                <div class="size">
+                  <h3>Size :</h3>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="imageBx">
+                <img
+                  src="asset/images/special offers/Ruby-Pendant-removebg-preview.png"
+                  alt=""
+                />
+              </div>
+              <div class="contentBx">
+                <h2>Diamond Pendant</h2>
+                <div class="size">
+                  <h3>Size :</h3>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="imageBx">
+                <img
+                  src="asset/images/special offers/Ruby-Pendant-removebg-preview.png"
+                  alt=""
+                />
+              </div>
+              <div class="contentBx">
+                <h2>Diamond Pendant</h2>
+                <div class="size">
+                  <h3>Size :</h3>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-row">
+          <div class="footer-col">
+            <img
+              src="asset/images/logo/logo.PNG"
+              alt="brand logo"
+              class="footer-heading"
+            />
+            <p class="slogan">
+              Distinctive jewellery, designed for those who cherish quality and
+              elegance.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Shop Online</h4>
+            <ul class="footerLinks">
+              <li><a href="#">Jewellery Materials</a></li>
+              <li><a href="#">Sizing Children's jewellery</a></li>
+              <li><a href="#">Delivery & Returns</a></li>
+              <li><a href="#">Order Tracking</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Categories</h4>
+            <ul class="footerLinks">
+              <li><a href="#">Rings</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Earrings</a></li>
+              <li><a href="#">Gold Buckle</a></li>
+              <li><a href="#">Bracelets</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Information</h4>
+            <ul class="footerLinks">
+              <li><a href="#">Order Tracking</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Need Help?</h4>
+            <ul class="contact-list">
+              <li>
+                <strong>Head Office:</strong> 785 15h Street, Office 478,
+                Karachi, Pakistan
+              </li>
+              <li><strong>Tel:</strong> +92333-2991877</li>
+              <li><strong>Email:</strong> contact.crystalnest@gmail.com</li>
+            </ul>
+
+            <div class="footer-icons">
+              <h4>Social</h4>
+              <ul class="social-list">
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footerCopyWriteSec">
+          <p>Crystal Nest © 2025. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Tilt js cdn -->
+    <script src="asset/js/script.js"></script>
+    <script src="asset/js/utility.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll(".menu-item.toggle");
+
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", function () {
+            const targetId = this.getAttribute("data-target");
+            const submenu = document.getElementById(targetId);
+            const icon = this.querySelector(".icon");
+
+            submenu.classList.toggle("open");
+            this.classList.toggle("active");
+
+            // Toggle icon
+            if (submenu.classList.contains("open")) {
+              icon.textContent = "−";
+            } else {
+              icon.textContent = "+";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

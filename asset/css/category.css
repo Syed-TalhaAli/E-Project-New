@@ -1,6 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 
+:root {
+  --first-color: hsl(82, 60%, 28%);
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --body-color: hsl(0, 0%, 95%);
+  --container-color: hsl(0, 0%, 100%);
+  --body-font: "Poppins", sens-serif;
+  --h2-font-size: 1.25rem;
+  --small-font-size: 0.813rem;
+  --white-text: #ffffff;
+  --golden-text: #deb647;
+  --brown-color: #a87735;
+  --gray-text: #f6f6f6;
+  --black-text: #000;
+  --icon-size: 1.313rem;
+}
+
 .collection-sec{
   display: flex;
   justify-content: center;
@@ -48,12 +65,15 @@
 }
 
 .card-1{
-  border: 1px solid #a87735;
+  border: 1px solid white;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  background: var(--white-text);
+  mix-blend-mode: darken;
+
 }
 
 .category-nav {
@@ -95,7 +115,6 @@
   height: 300px;
   gap: 1.5rem;
   position: relative;
-  mix-blend-mode: darken;
   opacity: 0;
   transform: translateX(50px);
   transition: all 0.6s ease-out;

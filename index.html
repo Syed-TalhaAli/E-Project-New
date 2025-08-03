@@ -1,286 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crystal Nest</title>
+    <link
+      rel="shortcut icon"
+      href="asset/images/logo/logo.PNG"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="asset/css/index.css" />
+    <link rel="stylesheet" href="asset/css/category.css" />
+    <link rel="stylesheet" href="asset/css/new-arrival.css" />
+    <link rel="stylesheet" href="asset/css/footer.css" />
+    <link rel="stylesheet" href="asset/css/media.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crystal Nest</title>
-  <link rel="shortcut icon" href="asset/images/logo/logo.PNG" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-  <link rel="stylesheet" href="asset/css/index.css" />
-  <link rel="stylesheet" href="asset/css/category.css" />
-  <link rel="stylesheet" href="asset/css/new-arrival.css">
-  <link rel="stylesheet" href="asset/css/footer.css">
-  <link rel="stylesheet" href="asset/css/media.css">
-</head>
-
-<body>
-
-  <!-- loader  -->
-  <!-- <div class="welcome-wrapper">
+  <body>
+    <!-- loader  -->
+    <!-- <div class="welcome-wrapper">
     <video autoplay muted loop>
       <source src="asset/video/Welcome to Crystal Nest.mp4" type="video/mp4" />
     </video>
   </div> -->
-  <!-- loader/ -->
+    <!-- loader/ -->
 
-  <!-- top link -->
-  <a href="#hero" class="top-link">&#x2191;</a>
-  <!-- top link/ -->
+    <!-- top link -->
 
-  <div class="wrapper"> <!-- wrapper start -->
+    <!-- top link/ -->
 
-    <!-- cursor  -->
-    <div class="cursor">
-      <div></div>
-    </div>
-    <!-- cursor/  -->
-    
-    <div class="main-screen"> <!-- main screen -->
+    <div class="wrapper">
+      <!-- wrapper start -->
 
-      <!-- open category toggle -->
-      <div class="collection_wrapper">
-        <div class="close_collection">
-          <strong class="closeCol">&#x2715;</strong>
-        </div>
-        <div class="collection_card1">
-          <ul>
-            <li data-type="earrings">Earrings</li>
-            <li data-type="rings">Rings</li>
-            <li data-type="necklaces">Necklaces</li>
-            <li data-type="bracelets">Bracelets</li>
-          </ul>
-        </div>
-        <div class="collection_card2">
-          <h2>Earings</h2>
-          <div class="collection_images">
-            <img src="asset/images/category/p1.jpg" id="product-image" alt="" />
-          </div>
-          <div class="collection_des">
-            <p>Starting Form : &nbsp; <strong>$169</strong></p>
-            <a href="#" class="view_collection">View Collection</a>
-          </div>
-        </div>
-        <div class="collection_card3">
-          <img src="asset/images/category/p8.webp" class="category_img" alt="" />
-        </div>
+      <!-- cursor  -->
+      <div class="cursor">
+        <div></div>
       </div>
-      <!-- close category toggle -->
+      <!-- cursor/  -->
 
-      <!-- header start -->
-      <header id="hero">
-        <div class="logo">
-          <a href="index.html"><img src="asset/images/logo/logo.PNG" alt="" /></a>
-        </div>
-        <div class="navbar">
-          <i class="fa-solid fa-xmark" id="closeMenu"></i>
-          <nav>
-            <a href="index.html"><img src="asset/images/logo/logo.PNG" class="sm-logo" alt="logo" /></a>
+      <div class="main-screen">
+        <!-- main screen -->
+
+        <!-- open category toggle -->
+        <div class="collection_wrapper">
+          <div class="close_collection">
+            <strong class="closeCol">&#x2715;</strong>
+          </div>
+          <div class="collection_card1">
             <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="new_arrival.html">NEW ARRIVAL</a></li>
-              <li><a href="">SPECIAL OFFER</a></li>
-              <li><a href="">PRODUCTS</a></li>
-              <li><a href="about-us.html">ABOUT US</a></li>
-              <li><a href="contact-us.html">CONTACT US</a></li>
+              <li data-type="earrings">Earrings</li>
+              <li data-type="rings">Rings</li>
+              <li data-type="necklaces">Necklaces</li>
+              <li data-type="bracelets">Bracelets</li>
             </ul>
-          </nav>
-        </div>
-
-        <div class="cart">
-          <div class="search">
-            <div class="dropdown">
-              <button class="dropbtn" id="col-type">CATEGORY</button>
+          </div>
+          <div class="collection_card2">
+            <h2>Earings</h2>
+            <div class="collection_images">
+              <img
+                src="asset/images/category/p1.jpg"
+                id="product-image"
+                alt=""
+              />
+            </div>
+            <div class="collection_des">
+              <p>Starting Form : &nbsp; <strong>$169</strong></p>
+              <a href="#" class="view_collection">View Collection</a>
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping"></i>
-          <i class="fa-solid fa-bars" id="noneMenu"></i>
-        </div>
-      </header>
-      <!-- header start -->
-
-
-      <!-- Hero section start -->
-       <section class="main-screen_sec">
-        <div class="slide-container">
-          <video autoplay muted loop class="active">
-            <source src="asset/video/01-1.mp4" type="video/mp4" />
-          </video>
-          <video autoplay muted loop>
-            <source src="asset/video/02-1.mp4" type="video/mp4" />
-          </video>
-          <video autoplay muted loop>
-            <source src="asset/video/03-1.mp4" type="video/mp4" />
-          </video>
-
-          <span class="prev backward">&#10094;</span>
-          <span class="next forward">&#10095;</span>
-
-          <div class="dotsContainer">
-            <div class="dot active" data-index="0"></div>
-            <div class="dot" data-index="1"></div>
-            <div class="dot" data-index="2"></div>
+          <div class="collection_card3">
+            <img
+              src="asset/images/category/p8.webp"
+              class="category_img"
+              alt=""
+            />
           </div>
         </div>
-      </section> 
-      <!-- Hero section start -->
+        <!-- close category toggle -->
 
+        <!-- header start -->
+        <header id="hero">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="asset/images/logo/logo.PNG" alt=""
+            /></a>
+          </div>
+          <div class="navbar">
+            <i class="fa-solid fa-xmark" id="closeMenu"></i>
+            <nav>
+              <a href="index.html"
+                ><img
+                  src="asset/images/logo/logo.PNG"
+                  class="sm-logo"
+                  alt="logo"
+              /></a>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="new_arrival.html">NEW ARRIVAL</a></li>
+                <li><a href="special-offers.html">SPECIAL OFFER</a></li>
+                <li><a href="">PRODUCTS</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+              </ul>
+            </nav>
+          </div>
 
-    </div> <!-- main screen -->
+          <div class="cart">
+            <div class="search">
+              <div class="dropdown">
+                <button class="dropbtn" id="col-type">CATEGORY</button>
+              </div>
+            </div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-bars" id="noneMenu"></i>
+            
+          </div>
+        </header>
+        <!-- header start -->
 
-    <!-- Shop By Category start -->
-    <section class="collection-sec">
-      <div class="category-head">
-        <h1 class="move-right">Collection</h1>
+        <!-- Hero section start -->
+        <section class="main-screen_sec">
+          <div class="slide-container">
+            <video autoplay muted loop class="active">
+              <source src="asset/video/01-1.mp4" type="video/mp4" />
+            </video>
+            <video autoplay muted loop>
+              <source src="asset/video/02-1.mp4" type="video/mp4" />
+            </video>
+            <video autoplay muted loop>
+              <source src="asset/video/03-1.mp4" type="video/mp4" />
+            </video>
+
+            <span class="prev backward">&#10094;</span>
+            <span class="next forward">&#10095;</span>
+
+            <div class="dotsContainer">
+              <div class="dot active" data-index="0"></div>
+              <div class="dot" data-index="1"></div>
+              <div class="dot" data-index="2"></div>
+            </div>
+          </div>
+        </section>
+        <!-- Hero section start -->
       </div>
-      <div class="category-data">
-        <div class="category-nav">
-          <ul>
+      <!-- main screen -->
+
+      <!-- Shop By Category start -->
+      <section class="collection-sec">
+        <div class="category-head">
+          <h1 class="move-right sections_heading">Collection</h1>
+        </div>
+        <div class="category-data">
+          <div class="category-nav">
             <ul>
-              <li><a href="#" class="active" data-category="diamond">Diamond</a></li>
-              <li><a href="#" data-category="amber">Amber</a></li>
-              <li><a href="#" data-category="amethyst">Amethyst</a></li>
-              <li><a href="#" data-category="ruby">Ruby</a></li>
-              <li><a href="#" data-category="turquoise">Turquoise</a></li>
+              <ul>
+                <li>
+                  <a href="#" class="active" data-category="diamond">Diamond</a>
+                </li>
+                <li><a href="#" data-category="amber">Amber</a></li>
+                <li><a href="#" data-category="amethyst">Amethyst</a></li>
+                <li><a href="#" data-category="ruby">Ruby</a></li>
+                <li><a href="#" data-category="turquoise">Turquoise</a></li>
+              </ul>
             </ul>
-          </ul>
-        </div>
-        <div class="scroll-hand">
-          <img src="asset/images/Hand.webp" class="hand" alt="hand" />
-        </div>
-        <div class="category-card"></div>
-      </div>
-    </section>
-    <!-- Shop By Category end -->
-
-    <section class="special-offers-sec">
-      <div class="gallery-products"></div>
-
-      <div class="category">
-        <div class="heading">
-          <h2 class="move-left">SPECIAL OFFERS</h2>
-        </div>
-        <div class="hand">
-          <div class="card_container">
-            <article class="card_article">
-              <img src="asset/images/special offers/amber ring.avif" alt="image" class="card_img" />
-
-              <div class="card_data">
-                <span class="card_description">Amber Ring</span>
-                <p>Was $150<span>-Now $120</span></p>
-                <a href="diamond.html"><button class="card__button">View More</button></a>
-              </div>
-            </article>
-
-            <article class="card_article">
-              <img src="asset/images/special offers/TurquoiseRing.webp" alt="image" class="card_img" />
-
-              <div class="card_data">
-                <span class="card_description">Turquoise Ring</span>
-                <p>Was $135<span>-Now $110</span></p>
-                <a href=""><button class="card__button">View More</button></a>
-              </div>
-            </article>
-
-            <article class="card_article">
-              <img src="asset/images/special offers/Amethyst-Earrings.webp" alt="image" class="card_img" />
-
-              <div class="card_data">
-                <span class="card_description">Amethyst Earring</span>
-                <p>Was $110<span>-Now $99</span></p>
-                <a href=""><button class="card__button">View More</button></a>
-              </div>
-            </article>
-
-            <article class="card_article">
-              <img src="asset/images/special offers/Ruby-Pendant.webp" alt="image" class="card_img" />
-
-              <div class="card_data">
-                <span class="card_description">Ruby Pendant</span>
-                <p>Was $159<span>-Now $139</span></p>
-                <a href=""><button class="card__button">View More</button></a>
-              </div>
-            </article>
           </div>
-          <div class="pitch">
-            <p>
-              Elevate your style with a limited-time offer crafted just for
-              you.
+          <div class="scroll-hand">
+            <img src="asset/images/Hand.webp" class="hand" alt="hand" />
+          </div>
+          <div class="category-card"></div>
+        </div>
+      </section>
+      <!-- Shop By Category end -->
+
+      <section>
+        <div class="diary_heading">
+          <h2 class="sections_heading">Wedding Diaries</h2>
+        </div>
+
+        <div class="grid_images">
+          <div class="grid_img_card">
+            <img src="asset/images/wedding/1.jpg" alt="" />
+          </div>
+          <div class="grid_img_card">
+            <img src="asset/images/wedding/2.jpg" alt="" />
+          </div>
+          <div class="grid_img_card">
+            <img src="asset/images/wedding/4.jpg" alt="" />
+          </div>
+          <div class="grid_img_card">
+            <img src="asset/images/wedding/3.jpg" alt="" />
+          </div>
+          <div class="grid_img_card">
+            <img src="asset/images/wedding/5.jpg" alt="" />
+          </div>
+          <div class="grid_img_card">
+            <img src="asset/images/wedding/6.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="diary_heading">
+          <h2 class="sections_heading">Feature Products</h2>
+        </div>
+        <div class="feature_products">
+          <div class="card">
+            <div class="imageBx">
+              <img src="asset/images/product/Feature Products/1.png" alt="" />
+            </div>
+            <div class="contentBx">
+              <h2>Diamond Ring</h2>
+              <a href="#">Coming soon</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imageBx">
+              <img src="asset/images/product/Feature Products/2.png" alt="" />
+            </div>
+            <div class="contentBx">
+              <h2>Ruby Set</h2>
+              <a href="#">Coming Soon</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imageBx">
+              <img src="asset/images/product/Feature Products/3.png" alt="" />
+            </div>
+            <div class="contentBx">
+              <h2>Ruby Ring</h2>
+
+              <a href="#">Coming Soon</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imageBx">
+              <img src="asset/images/product/Feature Products/4.png" alt="" />
+            </div>
+            <div class="contentBx">
+              <h2>Turquoise</h2>
+
+              <a href="#">Coming Soon</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imageBx">
+              <img src="asset/images/product/Feature Products/5.png" alt="" />
+            </div>
+            <div class="contentBx">
+              <h2>Turquoise Earring</h2>
+
+              <a href="#">Coming Soon</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imageBx">
+              <img src="asset/images/product/Feature Products/6.png" alt="" />
+            </div>
+            <div class="contentBx">
+              <h2>Ruby Earing</h2>
+
+              <a href="#">Coming Soon</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imageBx">
+              <img src="asset/images/product/Feature Products/7.png" alt="" />
+            </div>
+            <div class="contentBx">
+              <h2>Necklaces</h2>
+
+              <a href="#">Coming Soon</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imageBx">
+              <img src="asset/images/product/Feature Products/8.png" alt="" />
+            </div>
+            <div class="contentBx">
+              <h2>Pendant</h2>
+
+              <a href="#">Coming Soon</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section>
+        <div class="diary_heading">
+          <h2 class="sections_heading">Customers reviews</h2>
+        </div>
+        <div class="reviews-wrapper">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <div class="review-time">5 months ago</div>
+            <h3>Gift</h3>
+            <p>It looks more pretty in person than in photo.</p>
+
+            <div class="review-footer">
+              <div class="review-user">
+                <div class="avatar">RW</div>
+                <div>
+                  <p class="name">Robina W.</p>
+                  <p class="verified">
+                    Verified Buyer <span class="verified-icon">✔️</span>
+                  </p>
+                </div>
+              </div>
+              <img
+                src="asset/images/new arrivals/Amethyst-necklace.webp"
+                alt="product"
+                class="product-img"
+              />
+            </div>
+
+            <div class="feedback">
+              Was this helpful?
+              <span class="like">👍 22</span>
+              <span class="dislike">👎 26</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <div class="review-time">5 months ago</div>
+            <h3>Gift</h3>
+            <p>It looks more pretty in person than in photo.</p>
+
+            <div class="review-footer">
+              <div class="review-user">
+                <div class="avatar">RW</div>
+                <div>
+                  <p class="name">Robina W.</p>
+                  <p class="verified">
+                    Verified Buyer <span class="verified-icon">✔️</span>
+                  </p>
+                </div>
+              </div>
+              <img
+                src="asset/images/new arrivals/Amethyst-necklace.webp"
+                alt="product"
+                class="product-img"
+              />
+            </div>
+
+            <div class="feedback">
+              Was this helpful?
+              <span class="like">👍 22</span>
+              <span class="dislike">👎 26</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <div class="review-time">5 months ago</div>
+            <h3>Gift</h3>
+            <p>It looks more pretty in person than in photo.</p>
+
+            <div class="review-footer">
+              <div class="review-user">
+                <div class="avatar">RW</div>
+                <div>
+                  <p class="name">Robina W.</p>
+                  <p class="verified">
+                    Verified Buyer <span class="verified-icon">✔️</span>
+                  </p>
+                </div>
+              </div>
+              <img
+                src="asset/images/new arrivals/Amethyst-necklace.webp"
+                alt="product"
+                class="product-img"
+              />
+            </div>
+
+            <div class="feedback">
+              Was this helpful?
+              <span class="like">👍 22</span>
+              <span class="dislike">👎 26</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <div class="review-time">5 months ago</div>
+            <h3>Gift</h3>
+            <p>It looks more pretty in person than in photo.</p>
+
+            <div class="review-footer">
+              <div class="review-user">
+                <div class="avatar">RW</div>
+                <div>
+                  <p class="name">Robina W.</p>
+                  <p class="verified">
+                    Verified Buyer <span class="verified-icon">✔️</span>
+                  </p>
+                </div>
+              </div>
+              <img
+                src="asset/images/new arrivals/Amethyst-necklace.webp"
+                alt="product"
+                class="product-img"
+              />
+            </div>
+
+            <div class="feedback">
+              Was this helpful?
+              <span class="like">👍 22</span>
+              <span class="dislike">👎 26</span>
+            </div>
+          </div>
+
+        </div>
+      </section> -->
+      <section class="ratings-summary">
+        <div class="ratings-bars">
+          <div class="bar-row">
+            <span>5 ★</span>
+            <div class="bar"><div style="width: 90%"></div></div>
+            <span>90%</span>
+          </div>
+          <div class="bar-row">
+            <span>4 ★</span>
+            <div class="bar"><div style="width: 60%"></div></div>
+            <span>60%</span>
+          </div>
+          <div class="bar-row">
+            <span>3 ★</span>
+            <div class="bar"><div style="width: 40%"></div></div>
+            <span>40%</span>
+          </div>
+          <div class="bar-row">
+            <span>2 ★</span>
+            <div class="bar"><div style="width: 30%"></div></div>
+            <span>30%</span>
+          </div>
+          <div class="bar-row">
+            <span>1 ★</span>
+            <div class="bar"><div style="width: 10%"></div></div>
+            <span>10%</span>
+          </div>
+        </div>
+
+        <div class="average-rating">
+          <h2>4.0</h2>
+          <div class="stars">★★★★☆</div>
+          <p>46 Ratings</p>
+        </div>
+
+        <div class="recent-rating">
+          <h2>4.8</h2>
+          <div class="stars">★★★★★</div>
+          <p>Last Month</p>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="review-card">
+          <img src="https://i.pravatar.cc/100?img=1" alt="" />
+          <div class="stars">★★★★★</div>
+          <p>Sed facilisi tortor mauris in vestibulum turpis ac...</p>
+          <h4>Metlinda Parker</h4>
+        </div>
+
+        <div class="review-card">
+          <img src="https://i.pravatar.cc/100?img=2" alt="" />
+          <div class="stars">★★★★☆</div>
+          <p>Mattis turpis sed nisi ullamcorper pretium...</p>
+          <h4>Matthew Bennett</h4>
+        </div>
+
+        <div class="review-card">
+          <img src="https://i.pravatar.cc/100?img=3" alt="" />
+          <div class="stars">★★★★☆</div>
+          <p>Nisl purus diam morbi rhoncus pellentesque...</p>
+          <h4>Sophia Rodriguez</h4>
+        </div>
+
+        <div class="review-card">
+          <img src="https://i.pravatar.cc/100?img=4" alt="" />
+          <div class="stars">★★★☆☆</div>
+          <p>Convallis viverra viverra quisque ornare egestas...</p>
+          <h4>Ava Mitchell</h4>
+        </div>
+
+        <div class="review-card">
+          <img src="https://i.pravatar.cc/100?img=5" alt="" />
+          <div class="stars">★★★☆☆</div>
+          <p>Maecenas mauris eget venenatis auctor nulla...</p>
+          <h4>Christopher Mitchell</h4>
+        </div>
+      </section>
+
+      <!-- footer section -->
+      <footer>
+        <div class="footer-row">
+          <div class="footer-col">
+            <img
+              src="asset/images/logo/logo.PNG"
+              alt="brand logo"
+              class="footer-heading"
+            />
+            <p class="slogan">
+              Distinctive jewellery, designed for those who cherish quality and
+              elegance.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
+          <div class="footer-col">
+            <h4 class="footer-heading">Shop Online</h4>
+            <ul class="footerLinks">
+              <li><a href="#">Jewellery Materials</a></li>
+              <li><a href="#">Sizing Children's jewellery</a></li>
+              <li><a href="#">Delivery & Returns</a></li>
+              <li><a href="#">Order Tracking</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Categories</h4>
+            <ul class="footerLinks">
+              <li><a href="#">Rings</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Earrings</a></li>
+              <li><a href="#">Gold Buckle</a></li>
+              <li><a href="#">Bracelets</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Information</h4>
+            <ul class="footerLinks">
+              <li><a href="#">Order Tracking</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Need Help?</h4>
+            <ul class="contact-list">
+              <li>
+                <strong>Head Office:</strong> 785 15h Street, Office 478,
+                Karachi, Pakistan
+              </li>
+              <li><strong>Tel:</strong> +92333-2991877</li>
+              <li><strong>Email:</strong> contact.crystalnest@gmail.com</li>
+            </ul>
 
-
-    <!-- footer section -->
-    <footer>
-      <div class="footer-row">
-        <div class="footer-col">
-          <img src="asset/images/logo/logo.PNG" alt="brand logo" class="footer-heading" />
-          <p class="slogan">
-            Distinctive jewellery, designed for those who cherish quality and
-            elegance.
-          </p>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-heading">Shop Online</h4>
-          <ul class="footerLinks">
-            <li><a href="#">Jewellery Materials</a></li>
-            <li><a href="#">Sizing Children's jewellery</a></li>
-            <li><a href="#">Delivery & Returns</a></li>
-            <li><a href="#">Order Tracking</a></li>
-            <li><a href="#">FAQs</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-heading">Categories</h4>
-          <ul class="footerLinks">
-            <li><a href="#">Rings</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Earrings</a></li>
-            <li><a href="#">Gold Buckle</a></li>
-            <li><a href="#">Bracelets</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-heading">Information</h4>
-          <ul class="footerLinks">
-            <li><a href="#">Order Tracking</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Tutorials</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-heading">Need Help?</h4>
-          <p>
-            <strong>Head Office:</strong> 785 15h Street, Office 478, Karachi,
-            Pakistan
-          </p>
-          <p><strong>Tel:</strong> +92333-2991877</p>
-          <p><strong>Email: </strong> contact.crystalnest@gmail.com</p>
-          <div class="footer-icons">
-            <h4>Social</h4>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <div class="footer-icons">
+              <h4>Social</h4>
+              <ul class="social-list">
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="footerCopyWriteSec">
-        <p>Crystal Nest © 2025. All Rights Reserved.</p>
-      </div>
-    </footer>
+        <div class="footerCopyWriteSec">
+          <p>Crystal Nest © 2025. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <!-- wrapper end -->
 
-  </div> <!-- wrapper end -->
-
-
-  <!--All JS Files  -->
-  <script src="asset/js/script.js"></script>
-  <script src="asset/js/utility.js"></script>
-
-</body>
-
+    <!--All JS Files  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="asset/js/script.js"></script>
+    <script src="asset/js/utility.js"></script>
+  </body>
 </html>
