@@ -1,364 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Special Offers</title>
-    <link rel="stylesheet" href="asset/css/header.css" />
-    <link rel="stylesheet" href="asset/css/footer.css" />
-    <link rel="stylesheet" href="asset/css/index.css" />
-    <link rel="stylesheet" href="asset/css/new-arrival.css" />
-    <link rel="stylesheet" href="asset/css/media.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <!-- loader  -->
-    <!-- <div class="welcome-wrapper">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crystal Nest - Special Offers</title>
+  <link rel="stylesheet" href="asset/css/header.css" />
+  <link rel="stylesheet" href="asset/css/footer.css" />
+  <link rel="stylesheet" href="asset/css/index.css" />
+  <link rel="stylesheet" href="asset/css/new-arrival.css" />
+  <link rel="stylesheet" href="asset/css/media.css" />
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- loader  -->
+  <!-- <div class="welcome-wrapper">
     <video autoplay muted loop>
       <source src="asset/video/Welcome to Crystal Nest.mp4" type="video/mp4" />
     </video>
   </div> -->
-    <!-- loader/ -->
+  <!-- loader/ -->
 
-    <div class="wrapper">
-      <!-- cursor  -->
-      <div class="cursor">
-        <div></div>
+  <div class="wrapper"> <!-- wrapper start -->
+
+    <!-- cursor  -->
+    <div class="cursor">
+      <div></div>
+    </div>
+    <!-- cursor/  -->
+
+    <!-- header start -->
+    <header id="hero">
+
+      <div class="logo">
+        <a href="index.html"><img src="asset/images/logo/logo.PNG" alt="logo" /></a>
       </div>
-      <!-- cursor/  -->
 
-      <!-- header start -->
-      <header id="hero">
-        <div class="logo">
-          <a href="index.html"
-            ><img src="asset/images/logo/logo.PNG" alt=""
-          /></a>
-        </div>
-        <div class="navbar">
-          <i class="fa-solid fa-xmark" id="closeMenu"></i>
-          <nav>
-            <a href="index.html"
-              ><img src="asset/images/logo/logo.PNG" class="sm-logo" alt="logo"
-            /></a>
-            <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="new_arrival.html">NEW ARRIVAL</a></li>
-              <li><a href="special-offers.html">SPECIAL OFFER</a></li>
-              <li><a href="">PRODUCTS</a></li>
-              <li><a href="about-us.html">ABOUT US</a></li>
-              <li><a href="contact-us.html">CONTACT US</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="cart">
-          <div class="search">
-            <div class="dropdown">
-              <button class="dropbtn" id="col-type">CATEGORY</button>
-            </div>
-          </div>
-          <i class="fa-solid fa-cart-shopping"></i>
-          <i class="fa-solid fa-bars" id="noneMenu"></i>
-        </div>
-      </header>
-      <!-- header end -->
-
-      <!-- collection wrapper -->
-      <div class="collection_wrapper">
-        <div class="close_collection">
-          <strong class="closeCol">&#x2715;</strong>
-        </div>
-        <div class="collection_card1">
+      <div class="navbar">
+        <i class="fa-solid fa-xmark" id="closeMenu"></i>
+        <nav>
+          <a href="index.html"><img src="asset/images/logo/logo.PNG" class="sm-logo" alt="logo" /></a>
           <ul>
-            <li data-type="earrings">Earrings</li>
-            <li data-type="rings">Rings</li>
-            <li data-type="necklaces">Necklaces</li>
-            <li data-type="bracelets">Bracelets</li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="new_arrival.html">NEW ARRIVAL</a></li>
+            <li><a href="special-offers.html">SPECIAL OFFER</a></li>
+            <li><a href="product-card.html">PRODUCTS</a></li>
+            <li><a href="about-us.html">ABOUT US</a></li>
+            <li><a href="contact-us.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cart">
+        <div class="search">
+          <div class="dropdown">
+            <button class="dropbtn" id="col-type">CATEGORY</button>
+          </div>
+        </div>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-bars" id="noneMenu"></i>
+      </div>
+
+    </header>
+    <!-- header end -->
+
+    <!-- collection wrapper start -->
+    <div class="collection_wrapper">
+      <div class="close_collection">
+        <strong class="closeCol">&#x2715;</strong>
+      </div>
+      <div class="collection_card1">
+        <ul>
+          <li data-type="earrings">Earrings</li>
+          <li data-type="rings">Rings</li>
+          <li data-type="necklaces">Necklaces</li>
+          <li data-type="bracelets">Bracelets</li>
+        </ul>
+      </div>
+      <div class="collection_card2">
+        <h2>Earings</h2>
+        <div class="collection_images">
+          <img src="asset/images/category/p1.jpg" id="product-image" alt="category product image" />
+        </div>
+        <div class="collection_des">
+          <p>Starting Form : &nbsp; <strong>$169</strong></p>
+          <a href="product-card.html" class="view_collection">View Collection</a>
+        </div>
+      </div>
+      <div class="collection_card3">
+        <img src="asset/images/category/p8.webp" class="category_img" alt="category image" />
+      </div>
+    </div>
+    <!-- collection wrapper end -->
+
+    <!-- new arrival hero sec start -->
+    <section>
+      <div class="banner_row">
+        <div class="new-slider-container">
+          <div class="n-slider" id="bannerSlider">
+            <img src="asset/images/special offers/banners/sp-1.png" alt="Banner 1" id="bannerSlider" />
+            <img src="asset/images/special offers/banners/sp-2.png" alt="Banner 2" id="bannerSlider" />
+          </div>
+          <button class="n-prev">&#10094;</button>
+          <button class="n-next">&#10095;</button>
+        </div>
+      </div>
+    </section>
+    <!-- new arrival hero sec end -->
+
+    <!-- specail offers products start -->
+    <section>
+
+      <div class="diary_heading">
+        <h2 class="sections_heading">Special Offers</h2>
+      </div>
+      
+      <div class="feature_products">
+        <div class="card">
+          <div class="imageBx">
+            <img src="asset/images/special offers/Amber-Octopus-Pendant.png" alt="special offer product" />
+          </div>
+          <div class="contentBx">
+            <h2>Diamond Pendant</h2>
+            <div class="size">
+              <h3>Size :</h3>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+            </div>
+            <a href="#">Buy Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imageBx">
+            <img src="asset/images/special offers/amethyst_earring.png" alt="special offer product" />
+          </div>
+          <div class="contentBx">
+            <h2>Diamond Pendant</h2>
+            <div class="size">
+              <h3>Size :</h3>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+            </div>
+            <a href="#">Buy Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imageBx">
+            <img src="asset/images/special offers/amethyst_necklace.png" alt="special offer product" />
+          </div>
+          <div class="contentBx">
+            <h2>Diamond Pendant</h2>
+            <div class="size">
+              <h3>Size :</h3>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+            </div>
+            <a href="#">Buy Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imageBx">
+            <img src="asset/images/special offers/amethyst_pendent.png" alt="special offer product" />
+          </div>
+          <div class="contentBx">
+            <h2>Diamond Pendant</h2>
+            <div class="size">
+              <h3>Size :</h3>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+            </div>
+            <a href="#">Buy Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imageBx">
+            <img src="asset/images/special offers/amethyst_ring.png" alt="special offer product" />
+          </div>
+          <div class="contentBx">
+            <h2>Diamond Pendant</h2>
+            <div class="size">
+              <h3>Size :</h3>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+            </div>
+            <a href="#">Buy Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imageBx">
+            <img src="asset/images/special offers/Ruby_ring.png" alt="special offer product" />
+          </div>
+          <div class="contentBx">
+            <h2>Diamond Pendant</h2>
+            <div class="size">
+              <h3>Size :</h3>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+            </div>
+            <a href="#">Buy Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imageBx">
+            <img src="asset/images/special offers/rubybangle.png" alt="special offer product" />
+          </div>
+          <div class="contentBx">
+            <h2>Diamond Pendant</h2>
+            <div class="size">
+              <h3>Size :</h3>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+            </div>
+            <a href="#">Buy Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imageBx">
+            <img src="asset/images/special offers/Sterling-Silver-Whitby-Jet---Amber-Three-Stone-Leaf-Ring.png"
+              alt="special offer product" />
+          </div>
+          <div class="contentBx">
+            <h2>Diamond Pendant</h2>
+            <div class="size">
+              <h3>Size :</h3>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+            </div>
+            <a href="#">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- specail offers products end -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="footer-row">
+        <div class="footer-col">
+          <img src="asset/images/logo/logo.PNG" alt="brand logo" class="footer-heading" />
+          <p class="slogan">
+            Distinctive jewellery, designed for those who cherish quality and
+            elegance.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Shop Online</h4>
+          <ul class="footerLinks">
+            <li><a href="#">Jewellery Materials</a></li>
+            <li><a href="#">Sizing Children's jewellery</a></li>
+            <li><a href="#">Delivery & Returns</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">FAQs</a></li>
           </ul>
         </div>
-        <div class="collection_card2">
-          <h2>Earings</h2>
-          <div class="collection_images">
-            <img src="asset/images/category/p1.jpg" id="product-image" alt="" />
-          </div>
-          <div class="collection_des">
-            <p>Starting Form : &nbsp; <strong>$169</strong></p>
-            <a href="#" class="view_collection">View Collection</a>
-          </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Categories</h4>
+          <ul class="footerLinks">
+            <li><a href="#">Rings</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Earrings</a></li>
+            <li><a href="#">Gold Buckle</a></li>
+            <li><a href="#">Bracelets</a></li>
+          </ul>
         </div>
-        <div class="collection_card3">
-          <img
-            src="asset/images/category/p8.webp"
-            class="category_img"
-            alt=""
-          />
+        <div class="footer-col">
+          <h4 class="footer-heading">Information</h4>
+          <ul class="footerLinks">
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Need Help?</h4>
+          <p>
+            <strong>Head Office:</strong> 785 15h Street, Office 478, Karachi,
+            Pakistan
+          </p>
+          <p><strong>Tel:</strong> +92333-2991877</p>
+          <p><strong>Email: </strong> contact.crystalnest@gmail.com</p>
+          <div class="footer-icons">
+            <h4>Social</h4>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
         </div>
       </div>
-      <!-- collection wrapper -->
+      <div class="footerCopyWriteSec">
+        <p>Crystal Nest © 2025. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- end footer -->
 
-      <!-- new arrival hero sec start -->
-      <section>
-        <div class="banner_row">
-          <div class="new-slider-container">
-            <div class="n-slider" id="bannerSlider">
-              <img
-                src="asset/images/special offers/banners/sp-1.png"
-                alt="Banner 1"
-                id="bannerSlider"
-              />
-              <img
-                src="asset/images/special offers/banners/sp-2.png"
-                alt="Banner 2"
-                id="bannerSlider"
-              />
-            </div>
-            <button class="n-prev">&#10094;</button>
-            <button class="n-next">&#10095;</button>
-          </div>
-        </div>
-      </section>
+  </div> <!-- wrapper end -->
 
-      <section>
-        <div class="diary_heading">
-          <h2 class="sections_heading">Special Offers</h2>
-        </div>
-        <div class="feature_products">
-          <div class="card">
-            <div class="imageBx">
-              <img
-                src="asset/images/special offers/Amber-Octopus-Pendant.png"
-                alt=""
-              />
-            </div>
-            <div class="contentBx">
-              <h2>Diamond Pendant</h2>
-              <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-              </div>
-              <a href="#">Buy Now</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="imageBx">
-              <img
-                src="asset/images/special offers/amethyst_earring.png"
-                alt=""
-              />
-            </div>
-            <div class="contentBx">
-              <h2>Diamond Pendant</h2>
-              <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-              </div>
-              <a href="#">Buy Now</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="imageBx">
-              <img
-                src="asset/images/special offers/amethyst_necklace.png"
-                alt=""
-              />
-            </div>
-            <div class="contentBx">
-              <h2>Diamond Pendant</h2>
-              <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-              </div>
-              <a href="#">Buy Now</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="imageBx">
-              <img
-                src="asset/images/special offers/amethyst_pendent.png"
-                alt=""
-              />
-            </div>
-            <div class="contentBx">
-              <h2>Diamond Pendant</h2>
-              <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-              </div>
-              <a href="#">Buy Now</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="imageBx">
-              <img src="asset/images/special offers/amethyst_ring.png" alt="" />
-            </div>
-            <div class="contentBx">
-              <h2>Diamond Pendant</h2>
-              <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-              </div>
-              <a href="#">Buy Now</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="imageBx">
-              <img src="asset/images/special offers/Ruby_ring.png" alt="" />
-            </div>
-            <div class="contentBx">
-              <h2>Diamond Pendant</h2>
-              <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-              </div>
-              <a href="#">Buy Now</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="imageBx">
-              <img src="asset/images/special offers/rubybangle.png" alt="" />
-            </div>
-            <div class="contentBx">
-              <h2>Diamond Pendant</h2>
-              <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-              </div>
-              <a href="#">Buy Now</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="imageBx">
-              <img
-                src="asset/images/special offers/Sterling-Silver-Whitby-Jet---Amber-Three-Stone-Leaf-Ring.png"
-                alt=""
-              />
-            </div>
-            <div class="contentBx">
-              <h2>Diamond Pendant</h2>
-              <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-              </div>
-              <a href="#">Buy Now</a>
-            </div>
-          </div>
-        </div>
-      </section>
+  <!-- all js file -->
+  <script src="asset/js/script.js"></script>
+  <script src="asset/js/utility.js"></script>
+  <script src="asset/js/special.js"></script>
 
-      <section></section>
+</body>
 
-      <footer>
-        <div class="footer-row">
-          <div class="footer-col">
-            <img
-              src="asset/images/logo/logo.PNG"
-              alt="brand logo"
-              class="footer-heading"
-            />
-            <p class="slogan">
-              Distinctive jewellery, designed for those who cherish quality and
-              elegance.
-            </p>
-          </div>
-          <div class="footer-col">
-            <h4 class="footer-heading">Shop Online</h4>
-            <ul class="footerLinks">
-              <li><a href="#">Jewellery Materials</a></li>
-              <li><a href="#">Sizing Children's jewellery</a></li>
-              <li><a href="#">Delivery & Returns</a></li>
-              <li><a href="#">Order Tracking</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4 class="footer-heading">Categories</h4>
-            <ul class="footerLinks">
-              <li><a href="#">Rings</a></li>
-              <li><a href="#">Accessories</a></li>
-              <li><a href="#">Earrings</a></li>
-              <li><a href="#">Gold Buckle</a></li>
-              <li><a href="#">Bracelets</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4 class="footer-heading">Information</h4>
-            <ul class="footerLinks">
-              <li><a href="#">Order Tracking</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Tutorials</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4 class="footer-heading">Need Help?</h4>
-            <p>
-              <strong>Head Office:</strong> 785 15h Street, Office 478, Karachi,
-              Pakistan
-            </p>
-            <p><strong>Tel:</strong> +92333-2991877</p>
-            <p><strong>Email: </strong> contact.crystalnest@gmail.com</p>
-            <div class="footer-icons">
-              <h4>Social</h4>
-              <i class="fa-brands fa-facebook-f"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
-          </div>
-        </div>
-        <div class="footerCopyWriteSec">
-          <p>Crystal Nest © 2025. All Rights Reserved.</p>
-        </div>
-      </footer>
-    </div>
-
-    <script src="asset/js/script.js"></script>
-    <script src="asset/js/utility.js"></script>
-    <script src="asset/js/"></script>
-    <script src="asset/js/special.js"></script>
-
-    <script>
-      VanillaTilt.init(document.querySelectorAll(".card"), {
-        max: 10, // Natural tilt angle
-        speed: 400, // Smooth animation speed
-        scale: 1.02, // Slight zoom on hover
-        glare: true, // Light reflection for depth
-        "max-glare": 1, // Subtle shine
-        perspective: 800, // Medium 3D depth
-        easing: "cubic-bezier(.03,.98,.52,.99)", // Smooth easing
-        reset: true, // Return to original after hover
-        transition: true, // Smooth transition
-        reverse: false, // Natural direction
-        gyroscope: false, // Gyro off for desktop stability
-      });
-    </script>
-  </body>
 </html>
