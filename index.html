@@ -10,7 +10,6 @@
   <!-- font awesome cdn -->
   <link rel="stylesheet" href="asset/css/index.css" />
   <link rel="stylesheet" href="asset/css/category.css" />
-  <link rel="stylesheet" href="asset/css/new-arrival.css" />
   <link rel="stylesheet" href="asset/css/footer.css" />
   <link rel="stylesheet" href="asset/css/media.css" />
 </head>
@@ -99,15 +98,20 @@
       <!-- Hero section start -->
       <section class="main-screen_sec">
         <div class="slide-container">
-          <video autoplay muted loop class="active" >
+          <video autoplay muted loop class="active none-video" id="none-video">
             <source src="asset/video/01-1.mp4" type="video/mp4" />
           </video>
-          <video autoplay muted loop>
+          <video autoplay muted loop class="none-video" id="none-video">
             <source src="asset/video/02-1.mp4" type="video/mp4" />
           </video>
-          <video autoplay muted loop>
+
+          <video autoplay muted loop class="none-video" id="none-video">
             <source src="asset/video/03-1.mp4" type="video/mp4" />
           </video>
+
+          <img src="asset/images/hero-section/home-03.png" class="home-slider-img" alt="slide 1">
+          <img src="asset/images/hero-section/home-02.png" class="home-slider-img" alt="slide 2">
+          <img src="asset/images/hero-section/home-01.png" class="home-slider-img" alt="slide 3">
 
           <span class="prev backward">&#10094;</span>
           <span class="next forward">&#10095;</span>

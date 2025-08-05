@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
@@ -163,7 +162,7 @@ body {
   position: relative;
 }
 
-.main-screen > .main-screen_sec {
+.main-screen>.main-screen_sec {
   height: calc(100% - 80px) !important;
   width: 100% !important;
 }
@@ -381,6 +380,20 @@ header {
   background-color: var(--black-text);
 }
 
+.home-slider-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  object-fit: cover;
+}
+
+.home-slider-img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
 .slide-container video {
   object-fit: cover;
   opacity: 0;
@@ -414,6 +427,7 @@ header {
 .next {
   right: 20px;
 }
+
 .prev {
   left: 20px;
 }
@@ -429,12 +443,14 @@ header {
   padding: 8px;
   font-size: 20px;
 }
+
 .slide-container img.active {
   opacity: 1;
   z-index: 1;
 }
 
 @media (max-width: 768px) {
+
   .next,
   .prev {
     font-size: 16px;
@@ -527,6 +543,7 @@ header {
   transform: translateX(50px);
   transition: all 0.6s ease-in-out;
 }
+
 .card_container.show {
   transform: translateX(0);
 }
@@ -630,6 +647,7 @@ header {
 .card_article:not(:hover) {
   animation: show-overflow 2s forwards;
 }
+
 .card_article:not(:hover) .card_data {
   animation: remove-data 1s forwards;
 }
@@ -654,9 +672,11 @@ header {
   0% {
     transform: translateY(-7rem);
   }
+
   50% {
     transform: translateY(-10rem);
   }
+
   100% {
     transform: translateY(0.5rem);
   }
@@ -666,6 +686,7 @@ header {
   0% {
     overflow: initial;
   }
+
   50% {
     overflow: hidden;
   }
@@ -806,6 +827,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
 .card {
   position: relative;
   height: 350px;
@@ -877,6 +899,7 @@ header {
   margin-top: 3rem;
   color: var(--white-text);
 }
+
 .card .contentBx a {
   display: inline-block;
   padding: 10px 20px;

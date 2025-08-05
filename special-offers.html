@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="asset/css/header.css" />
   <link rel="stylesheet" href="asset/css/footer.css" />
   <link rel="stylesheet" href="asset/css/index.css" />
-  <link rel="stylesheet" href="asset/css/new-arrival.css" />
   <link rel="stylesheet" href="asset/css/media.css" />
   <!-- font awesome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
@@ -117,7 +116,7 @@
       <div class="diary_heading">
         <h2 class="sections_heading">Special Offers</h2>
       </div>
-      
+
       <div class="feature_products">
         <div class="card">
           <div class="imageBx">
@@ -125,7 +124,7 @@
           </div>
           <div class="contentBx">
             <h2>Diamond Pendant</h2>
-            
+
             <a href="#">Buy Now</a>
           </div>
         </div>
@@ -135,7 +134,7 @@
           </div>
           <div class="contentBx">
             <h2>Diamond Pendant</h2>
-            
+
             <a href="#">Buy Now</a>
           </div>
         </div>
@@ -145,7 +144,7 @@
           </div>
           <div class="contentBx">
             <h2>Diamond Pendant</h2>
-            
+
             <a href="#">Buy Now</a>
           </div>
         </div>
@@ -155,7 +154,7 @@
           </div>
           <div class="contentBx">
             <h2>Diamond Pendant</h2>
-            
+
             <a href="#">Buy Now</a>
           </div>
         </div>
@@ -165,13 +164,7 @@
           </div>
           <div class="contentBx">
             <h2>Diamond Pendant</h2>
-            <div class="size">
-              <h3>Size :</h3>
-              <span>7</span>
-              <span>8</span>
-              <span>9</span>
-              <span>10</span>
-            </div>
+
             <a href="#">Buy Now</a>
           </div>
         </div>
@@ -181,13 +174,7 @@
           </div>
           <div class="contentBx">
             <h2>Diamond Pendant</h2>
-            <div class="size">
-              <h3>Size :</h3>
-              <span>7</span>
-              <span>8</span>
-              <span>9</span>
-              <span>10</span>
-            </div>
+
             <a href="#">Buy Now</a>
           </div>
         </div>
@@ -197,13 +184,7 @@
           </div>
           <div class="contentBx">
             <h2>Diamond Pendant</h2>
-            <div class="size">
-              <h3>Size :</h3>
-              <span>7</span>
-              <span>8</span>
-              <span>9</span>
-              <span>10</span>
-            </div>
+
             <a href="#">Buy Now</a>
           </div>
         </div>
@@ -214,7 +195,7 @@
           </div>
           <div class="contentBx">
             <h2>Diamond Pendant</h2>
-            
+
             <a href="#">Buy Now</a>
           </div>
         </div>
@@ -287,29 +268,28 @@
   </div> <!-- wrapper end -->
 
   <!-- all js file -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   <!-- js tilt library cdn -->
   <script src="asset/js/script.js"></script>
   <script src="asset/js/utility.js"></script>
   <script src="asset/js/special.js"></script>
 
   <script>
+
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 10,
+      speed: 400,
+      scale: 1.02,
+      glare: true,
+      "max-glare": 0.6,
+      perspective: 800,
+      easing: "cubic-bezier(.03,.98,.52,.99)",
+      reset: true,
+      transition: true,
+      reverse: false,
+      gyroscope: false,
+    });
     
-VanillaTilt.init(document.querySelectorAll(".card"), {
-  max: 10, // Natural tilt angle
-  speed: 400, // Smooth animation speed
-  scale: 1.02, // Slight zoom on hover
-  glare: true, // Light reflection for depth
-  "max-glare": 1, // Subtle shine
-  perspective: 800, // Medium 3D depth
-  easing: "cubic-bezier(.03,.98,.52,.99)", // Smooth easing
-  reset: true, // Return to original after hover
-  transition: true, // Smooth transition
-  reverse: false, // Natural direction
-  gyroscope: false, // Gyro off for desktop stability
-});
-
-
   </script>
 
 </body>

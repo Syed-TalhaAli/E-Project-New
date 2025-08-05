@@ -22,6 +22,15 @@
   }
 }
 
+@media (max-width: 815px) {
+  .none-video, #none-video {
+    display: none !important;
+  }
+  header {
+    border-bottom: var(--white-text);
+  }
+}
+
 @media (min-width: 1129px) and (max-width: 1210px) {
   .sections_heading {
     font-size: 5rem !important;
@@ -501,7 +510,7 @@
     top: 0;
     width: 90%;
     height: 100svh;
-    background: darkkhaki;
+    background: var(--brown-color);
   }
 
   .cart i {
@@ -605,7 +614,6 @@
     width: 100%;
     height: 300px;
     margin-top: 7px;
-    background: darkblue;
   }
 
   .collection_card3 img {
@@ -768,7 +776,7 @@
     top: 0;
     width: 100%;
     height: 100svh;
-    background: darkkhaki;
+    background:var(--black-text);
   }
 
   .cart i {

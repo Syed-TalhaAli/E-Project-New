@@ -25,7 +25,6 @@ function animate() {
 }
 
 animate();
-
 // cursor end
 
 // category click
@@ -76,11 +75,9 @@ items.forEach((item) => {
     }, 10);
   });
 });
-
 // category click end
 
 // Wellcome Video
-
 const wellcomeWrapper = document.querySelector(".welcome-wrapper");
 
 // setTimeout(() => {
@@ -91,8 +88,8 @@ const wellcomeWrapper = document.querySelector(".welcome-wrapper");
 //   resetVideoAutoSlide();
 // }, 8100);
 
-// scroll to move hand upward
 
+// scroll to move hand upward
 const boxes = document.querySelectorAll(".scroll-hand");
 
 window.addEventListener("scroll", () => {
@@ -197,13 +194,24 @@ window.addEventListener("scroll", () => {
   });
 });
 
+
 // ------------------ Video Slideshow ------------------
 const videos = document.querySelectorAll(".slide-container video");
 const next = document.querySelector(".next");
 const prev = document.querySelector(".prev");
 const dots = document.querySelectorAll(".dot");
-
+const slides = document.querySelectorAll('.home-slider-img');
+let current = 0;
 let counter = 0;
+
+
+setInterval(() => {
+  slides[current].classList.remove('active');
+
+  current = (current + 1) % slides.length;
+
+  slides[current].classList.add('active');
+}, 4000);
 
 function updateSlide(index, shouldRestart = false) {
   videos.forEach((vid, i) => {
@@ -233,11 +241,17 @@ function goPrev() {
 next.addEventListener("click", () => {
   goNext();
   resetVideoAutoSlide();
+  slides[current].classList.remove('active');
+  current = (current + 1) % slides.length;
+  slides[current].classList.add('active');
 });
 
 prev.addEventListener("click", () => {
   goPrev();
   resetVideoAutoSlide();
+  slides[current].classList.remove('active');
+  current = (current - 1) % slides.length;
+  slides[current].classList.add('active');
 });
 
 dots.forEach((dot) => {
@@ -254,177 +268,8 @@ function resetVideoAutoSlide() {
   clearInterval(videoAutoSlide);
   videoAutoSlide = setInterval(goNext, 5000);
 }
-// hero section image slide samll screen
-
-
-// ------------------ Hero Section Slideshow ------------------
-
-// const slide = document.querySelector(".slide");
-
-// function autoSlideHero() {
-//   const firstItem = slide.querySelector(".item");
-//   slide.appendChild(firstItem);
-//   updateSlideStyles();
-// }
-
-// function updateSlideStyles() {
-//   const items = slide.querySelectorAll(".item");
-
-//   items.forEach((item, index) => {
-//     item.style.position = "absolute";
-//     item.style.top = index <= 1 ? "0" : "85%";
-//     item.style.transform = index <= 1 ? "translate(0, 0)" : "translate(0, -85%)";
-//     item.style.borderRadius = index <= 1 ? "0" : "20px";
-//     item.style.width = index <= 1 ? "100%" : "140px";
-//     item.style.height = index <= 1 ? "100%" : "200px";
-//     item.style.boxShadow = "0 10px 10px #505050";
-//     item.style.backgroundPosition = index <= 1 ? "center" : "50% 50%";
-//     item.style.backgroundSize = "cover";
-//     item.style.transition = "0.5s";
-//     item.style.opacity = "1";
-
-//     if (index === 2) item.style.left = "78%";
-//     else if (index === 3) item.style.left = "calc(74% + 215px)";
-//     else if (index === 4) item.style.left = "calc(59% + 293px)";
-//     else if (index >= 5) {
-//       item.style.left = "calc(55% + 660px)";
-//       item.style.opacity = "0";
-//     } else {
-//       item.style.left = "0";
-//     }
-
-//     const content = item.querySelector(".content");
-//     if (content) {
-//       content.style.display = index === 1 ? "block" : "none";
-//     }
-//   });
-// }
-
-// updateSlideStyles();
-// setInterval(autoSlideHero, 5000);
-
-// Gallery
-
-// const products = [
-//     {
-//         id: 1,
-//         name: "Product 1",
-//         price: 10.99,
-//         description: "This is product 1",
-//         Img: "asset/images/category/Amber.jpeg"
-//     },
-//     {
-//         id: 2,
-//         name: "Product 2",
-//         price: 15.49,
-//         description: "This is product 2",
-//         Img: "asset/images/category/Amethyst.jpg"
-//     },
-//     {
-//         id: 3,
-//         name: "Product 3",
-//         price: 20.99,
-//         description: "This is product 3",
-//         Img: "asset/images/category/Diamond.jpg"
-//     },
-//     {
-//         id: 4,
-//         name: "Product 4",
-//         price: 25.00,
-//         description: "This is product 4",
-//         Img: "asset/images/category/Ruby.jpg"
-//     }
-// ];
-
-// const row = document.querySelector(".row");
-// const galleryProducts = document.querySelector(".gallery-products");
-
-// function displayProducts() {
-//     for (let i = 0; i < products.length; i++) {
-//         const product = products[i];
-
-//         if (products.length > 0) {
-//             row.innerHTML += `
-//            <div class="col">
-//                 <img src="${product.Img}" alt="">
-//                 <h2>${product.name}</h2>
-//                 <button class="btn" onClick="showProduct('${product.id}')">View Product</button>
-//             </div>
-//         `;
-//         }
-
-//     }
-// }
-
-// displayProducts();
-
-// function showProduct(id) {
-//     const product = products.find(product => product.id === parseInt(id));
-
-//     galleryProducts.classList.toggle("toggleGallery");
-//     galleryProducts.innerHTML = `
-//        <div class="card">
-//                 <div class="left">
-//                     <img src="${product.Img}" alt="${product.name}">
-//                     <i class="fa fa-long-arrow-left"></i>
-//                     <i class="fa fa-long-arrow-right"></i>
-//                 </div>
-//                 <div class="right">
-//                     <div class="product-info">
-//                         <div class="product-name">
-//                             <h1>${product.name}</h1>
-//                             <i class="fa fa-search"></i>
-//                             <i class="fa fa-user"></i>
-//                             <i class="fa fa-shopping-cart"></i>
-//                         </div>
-//                         <div class="details">
-//                             <h3>${product.description}</h3>
-//                             <h2>${product.name}</h2>
-//                             <h4><span class="fa fa-dollar"></span>${product.price}</h4>
-//                         </div>
-//                         <ul>
-//                             <li>SIZE</li>
-//                             <li class="bg">7</li>
-//                             <li class="bg">8</li>
-//                             <li class="bg">9</li>
-//                             <li class="bg">10</li>
-//                             <li class="bg">11</li>
-//                         </ul>
-//                         <span class="foot"><i class="fa fa-shopping-bag"></i>Buy Now</span>
-//                         <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
-//                     </div>
-//                 </div>
-//             </div>
-//             <div class="controls">
-//                 <button onClick="prev1('${product.id}')" class="prev">&#60;</button>
-//                 <button onClick="next1('${product.id}')" class="next">&#62;</button>
-//             </div>
-//     `;
-// }
-
-// galleryProducts.addEventListener("click", function (e) {
-//     if (!e.target.classList.contains("card")) {
-//         galleryProducts.classList.toggle("toggleGallery");
-//     }
-
-// })
-
-// function prev1(id) {
-//     const currentIndex = products.findIndex(product => product.id === parseInt(id));
-//     const prevIndex = (currentIndex - 1 + products.length) % products.length;
-//     const prevProduct = products[prevIndex];
-//     showProduct(prevProduct.id);
-// }
-
-// function next1(id) {
-//     const currentIndex = products.findIndex(product => product.id === parseInt(id));
-//     const nextIndex = (currentIndex + 1) % products.length;
-//     const nextProduct = products[nextIndex];
-//     showProduct(nextProduct.id);
-// }
 
 // Collection JavaScript
-
 const categoryLinks = document.querySelectorAll(".category-nav a");
 const categoryCard = document.querySelector(".category-card");
 
@@ -517,10 +362,8 @@ const products = {
 };
 
 function renderCategory(category) {
-  // Clear existing cards
   categoryCard.innerHTML = "";
 
-  // Add product cards
   products[category].forEach((product) => {
     const card = document.createElement("div");
     card.className = "card-1";
@@ -554,7 +397,6 @@ categoryLinks.forEach((link) => {
   });
 });
 
-// Default: show diamond category on load
 renderCategory("diamond");
 
 categoryLinks.forEach((link) => {
@@ -574,30 +416,29 @@ categoryLinks.forEach((link) => {
 });
 
 VanillaTilt.init(document.querySelectorAll(".card"), {
-  max: 10, // Natural tilt angle
-  speed: 400, // Smooth animation speed
-  scale: 1.02, // Slight zoom on hover
-  glare: true, // Light reflection for depth
-  "max-glare": 1, // Subtle shine
-  perspective: 800, // Medium 3D depth
-  easing: "cubic-bezier(.03,.98,.52,.99)", // Smooth easing
-  reset: true, // Return to original after hover
-  transition: true, // Smooth transition
-  reverse: false, // Natural direction
-  gyroscope: false, // Gyro off for desktop stability
+  max: 10,
+  speed: 400,
+  scale: 1.02,
+  glare: true,
+  "max-glare": 0.6,
+  perspective: 800,
+  easing: "cubic-bezier(.03,.98,.52,.99)",
+  reset: true,
+  transition: true,
+  reverse: false,
+  gyroscope: false,
 });
 
-
 VanillaTilt.init(document.querySelectorAll(".grid_img_card img"), {
-  max: 10, // Natural tilt angle
-  speed: 400, // Smooth animation speed
-  glare: true, // Light reflection for depth
-  "max-glare": 1, // Subtle shine
-  perspective: 800, // Medium 3D depth
-  easing: "cubic-bezier(.03,.98,.52,.99)", // Smooth easing
-  reset: true, // Return to original after hover
-  transition: true, // Smooth transition
-  reverse: false, // Natural direction
-  gyroscope: false, // Gyro off for desktop stability
+  max: 10,
+  speed: 400,
+  glare: true,
+  "max-glare": 1,
+  perspective: 800,
+  easing: "cubic-bezier(.03,.98,.52,.99)",
+  reset: true,
+  transition: true,
+  reverse: false,
+  gyroscope: false,
 });
 

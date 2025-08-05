@@ -128,6 +128,12 @@ const manageProducts = [
 
 const bxContainer = document.querySelector(".bx-container");
 const menuCategories = document.querySelector(".menu");
+const slider = document.querySelector(".product-slider");
+const slides = document.querySelectorAll(".product-slider img");
+const prevBtn = document.querySelector(".p-n-prev");
+const nextBtn = document.querySelector(".p-n-next");
+let currentIndex = 0;
+
 
 displayProducts("All Products");
 
@@ -179,14 +185,6 @@ function displayProducts(categoryName) {
     });
 }
 
-// slider js 
-const slider = document.querySelector(".product-slider");
-const slides = document.querySelectorAll(".product-slider img");
-const prevBtn = document.querySelector(".p-n-prev");
-const nextBtn = document.querySelector(".p-n-next");
-
-let currentIndex = 0;
-
 function updateSlider() {
     slider.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
@@ -199,4 +197,19 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
     updateSlider();
+});
+
+// tilt js
+VanillaTilt.init(document.querySelectorAll(".card"), {
+    max: 10,
+    speed: 400,
+    scale: 1.02,
+    glare: true,
+    "max-glare": 0.6,
+    perspective: 300,
+    easing: "cubic-bezier(.03,.98,.52,.99)",
+    reset: true,
+    transition: true,
+    reverse: false,
+    gyroscope: false,
 });

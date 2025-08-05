@@ -1,6 +1,16 @@
 const fixedDirectory = "asset/images/new arrivals/";
 const newArrivalProductsElem = document.querySelector(".new_arrivals_products");
 const productWrapper = document.querySelector(".gallery_products");
+let currentSlide = 0;
+const slider = document.getElementById("bannerSlider");
+const slides = slider.querySelectorAll("img");
+const totalSlides = slides.length;
+const n_prev = document.querySelector(".n-prev");
+const n_next = document.querySelector(".n-next");
+
+n_next.addEventListener("click", nextSlide);
+n_prev.addEventListener("click", prevSlide);
+
 
 const arrivalProducts = [
   {
@@ -147,21 +157,6 @@ productWrapper.addEventListener("click", function (e) {
   }
 });
 
-displayArrivalProducts();
-
-let currentSlide = 0;
-const slider = document.getElementById("bannerSlider");
-const slides = slider.querySelectorAll("img");
-const totalSlides = slides.length;
-
-const n_prev = document.querySelector(".n-prev");
-const n_next = document.querySelector(".n-next");
-console.log(n_next);
-console.log(n_prev);
-
-
-n_next.addEventListener("click", nextSlide);
-n_prev.addEventListener("click", prevSlide);
 
 function showSlide(index) {
   slider.style.transform = `translateX(-${index * 100}%)`;
@@ -177,6 +172,5 @@ function prevSlide() {
   showSlide(currentSlide);
 }
 
-
-
+displayArrivalProducts();
 setInterval(nextSlide, 4000);
