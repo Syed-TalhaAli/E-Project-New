@@ -29,7 +29,6 @@ animate();
 // cursor end
 
 // category click
-
 const collectionOpen = document.getElementById("col-type");
 const collectionWrapper = document.querySelector(".collection_wrapper");
 const collectionClose = document.querySelector(".closeCol");
@@ -199,7 +198,6 @@ window.addEventListener("scroll", () => {
 });
 
 // ------------------ Video Slideshow ------------------
-
 const videos = document.querySelectorAll(".slide-container video");
 const next = document.querySelector(".next");
 const prev = document.querySelector(".prev");
@@ -256,8 +254,7 @@ function resetVideoAutoSlide() {
   clearInterval(videoAutoSlide);
   videoAutoSlide = setInterval(goNext, 5000);
 }
-
-
+// hero section image slide samll screen
 
 
 // ------------------ Hero Section Slideshow ------------------
