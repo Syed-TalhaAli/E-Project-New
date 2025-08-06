@@ -102,18 +102,44 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+/* Email section styling */
+.email-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.email-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+}
 
 .email-link {
-  display: inline-block;
-  background-color: #0056b3;
-  color: #fff;
-  padding: 10px 20px;
+  color: #007BFF;
   text-decoration: none;
-  border-radius: 6px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  margin-left: 5px;
+  transition: color 0.3s ease;
 }
 
 .email-link:hover {
-  background-color: #003d80;
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .email-text {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
 }

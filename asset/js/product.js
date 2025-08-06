@@ -128,12 +128,26 @@ const manageProducts = [
 
 const bxContainer = document.querySelector(".bx-container");
 const menuCategories = document.querySelector(".menu");
-const slider = document.querySelector(".product-slider");
-const slides = document.querySelectorAll(".product-slider img");
+
+const slider = document.querySelector(".n-slider");
+const slides = document.querySelectorAll("#bannerSlider img");
 const prevBtn = document.querySelector(".p-n-prev");
 const nextBtn = document.querySelector(".p-n-next");
 let currentIndex = 0;
 
+function updateSlider() {
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlider();
+});
+
+prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlider();
+});
 
 displayProducts("All Products");
 
@@ -185,20 +199,6 @@ function displayProducts(categoryName) {
     });
 }
 
-function updateSlider() {
-    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-nextBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateSlider();
-});
-
-prevBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateSlider();
-});
-
 // tilt js
 VanillaTilt.init(document.querySelectorAll(".card"), {
     max: 10,
@@ -213,3 +213,82 @@ VanillaTilt.init(document.querySelectorAll(".card"), {
     reverse: false,
     gyroscope: false,
 });
+
+// cursor
+const wrapper = document.querySelector(".wrapper");
+const cursor = document.querySelector(".cursor");
+
+let mouseX = 0;
+let mouseY = 0;
+
+let currentX = 0;
+let currentY = 0;
+
+wrapper.addEventListener("mousemove", (e) => {
+    const rect = wrapper.getBoundingClientRect();
+    mouseX = e.clientX - rect.left;
+    mouseY = e.clientY - rect.top;
+});
+
+function animate() {
+    currentX += (mouseX - currentX) * 0.2;
+    currentY += (mouseY - currentY) * 0.2;
+
+    cursor.style.left = currentX + "px";
+    cursor.style.top = currentY + "px";
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+
+
+// collection wrappper
+const collectionOpen = document.getElementById("col-type");
+const collectionWrapper = document.querySelector(".collection_wrapper");
+const collectionClose = document.querySelector(".closeCol");
+const categoryImg = document.querySelector(".category_img");
+
+collectionOpen.addEventListener("click", () => {
+    collectionWrapper.classList.add("colActive");
+});
+
+collectionClose.addEventListener("click", () => {
+    collectionWrapper.classList.remove("colActive");
+});
+
+const items = document.querySelectorAll(".collection_card1 li");
+const title = document.querySelector(".collection_card2 h2");
+const productImage = document.getElementById("product-image");
+const collection_card2 = document.querySelector(".collection_card2");
+
+const images = {
+    earrings: "asset/images/category/p1.jpg",
+    rings: "asset/images/category/p3.webp",
+    necklaces: "asset/images/category/p4.webp",
+    bracelets: "asset/images/category/p5.webp",
+};
+
+items.forEach((item) => {
+    item.addEventListener("click", () => {
+        const type = item.getAttribute("data-type");
+
+        if (type === "earrings") {
+            categoryImg.src = "asset/images/category/p8.webp";
+        } else if (type === "rings") {
+            categoryImg.src = "asset/images/category/p6.webp";
+        } else if (type === "necklaces") {
+            categoryImg.src = "asset/images/category/p2.webp";
+        } else {
+            categoryImg.src = "asset/images/category/p7.jpg";
+        }
+
+        collection_card2.classList.remove("smoothActive");
+        setTimeout(() => {
+            title.textContent = type.charAt(0).toUpperCase() + type.slice(1);
+            productImage.src = images[type];
+            collection_card2.classList.add("smoothActive");
+        }, 10);
+    });
+});
+
