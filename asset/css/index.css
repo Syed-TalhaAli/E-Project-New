@@ -410,7 +410,7 @@ header {
   font-size: 28px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
+  border-radius: 10%;
   padding: 10px;
   cursor: pointer;
   z-index: 10;

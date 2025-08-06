@@ -47,7 +47,7 @@ const arrivalProducts = [
     name: "Amethyst Bangle",
     discription:
       "Sleek design meets the calming charm of amethyst in this timeless bangle.",
-    price: 100,
+    price: 140,
     image: `${fixedDirectory}amethyst_bangle.png`,
   },
   {
@@ -76,42 +76,42 @@ const arrivalProducts = [
   },
   {
     id: 5,
-    name: "Round diamond ring",
+    name: "Round Diamond Ring",
     discription:
       "Fully encrusted with round diamonds, this claw-set ring radiates sparkle from every angle.",
-    price: 100,
+    price: 170,
     image: `${fixedDirectory}Full Claw Set Round Diamond Ring.png`,
   },
   {
     id: 6,
-    name: "Glacier diamond bracelet",
+    name: "Glacier Diamond Bracelet",
     discription:
       "Cool, clean, and radiant—diamonds flow like frozen light in this glacier-inspired bracelet.",
-    price: 100,
+    price: 130,
     image: `${fixedDirectory}glacier_diamond_bracelet.png`,
   },
   {
     id: 7,
-    name: "Ruby diamond earing",
+    name: "Ruby Diamond Earing",
     discription:
       "Striking ruby accents meet brilliant diamonds in a bold infinity silhouette that symbolizes forever.",
-    price: 100,
+    price: 119,
     image: `${fixedDirectory}infinity-ruby-diamond-earrings.png`,
   },
   {
     id: 8,
-    name: "Sapphire diamond",
+    name: "Sapphire Diamond",
     discription:
       "Where art meets elegance—sapphires and diamonds unite in a striking, Picasso-inspired ring.",
-    price: 100,
+    price: 109,
     image: `${fixedDirectory}picasso-sapphire-and-diamond-ring.png`,
   },
   {
     id: 9,
-    name: "Ruby & diamond bracelet",
+    name: "Ruby & Diamond Bracelet",
     discription:
       "Alternating rubies and diamonds create a vibrant rhythm of color and sparkle in this sleek tennis bracelet.",
-    price: 100,
+    price: 111,
     image: `${fixedDirectory}ruby-and-diamond-tennis-bracelet.png`,
   },
 ];
@@ -149,7 +149,7 @@ function openArrivalProduct(id = null) {
         <div class="gallery_content">
           <h2>${product.name}</h2>
           <p>${product.discription}</p>
-          <p class="g_price">Price : ${product.price}$</p>
+          <p class="g_price">Price : $${product.price}</p>
           <div class="g-btns-wrapper">
             <button>Buy Now</button>
             <button>Add To Cart</button>
