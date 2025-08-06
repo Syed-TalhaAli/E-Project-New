@@ -295,7 +295,7 @@ const products = {
             price: "$90.00",
         },
         {
-            img: "asset/images/collection/amber/bracelet.webp",
+            img: "asset/images/collection/amber/bracelet.png",
             name: "Bracelet",
             price: "$95.00",
         },
@@ -307,7 +307,7 @@ const products = {
     ],
     amethyst: [
         {
-            img: "asset/images/collection/amethyst/bracelet.jpg",
+            img: "asset/images/collection/amethyst/bracelet.png",
             name: "Bracelet",
             price: "$85.00",
         },
@@ -329,7 +329,7 @@ const products = {
             price: "$120.00",
         },
         {
-            img: "asset/images/collection/ruby/necklace.webp",
+            img: "asset/images/collection/ruby/necklace.png",
             name: "Necklace",
             price: "$125.00",
         },

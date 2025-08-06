@@ -7,7 +7,7 @@
   --text-color: hsl(0, 0%, 35%);
   --body-color: hsl(0, 0%, 95%);
   --container-color: hsl(0, 0%, 100%);
-  --body-font: "Poppins", sens-serif;
+  --body-font: "Montserrat", sans-serif;
   --h2-font-size: 1.25rem;
   --small-font-size: 0.813rem;
   --white-text: #ffffff;
@@ -138,7 +138,7 @@ section {
   list-style: none;
   flex-direction: column;
   gap: 2rem;
-  font-family: "Sorts Mill Goudy", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
 }
 
@@ -151,7 +151,7 @@ section {
 .collection_card2 h2 {
   text-align: center;
   font-size: 40px;
-  font-family: "Sorts Mill Goudy", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .collection_card2 .collection_images {
@@ -174,7 +174,7 @@ section {
 
 .collection_card2 .collection_des p {
   font-size: 28px;
-  font-family: "Sorts Mill Goudy", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .collection_des a {

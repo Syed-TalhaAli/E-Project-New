@@ -149,6 +149,11 @@ prevBtn.addEventListener("click", () => {
     updateSlider();
 });
 
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlider();
+}, 3000);
+
 displayProducts("All Products");
 
 menuCategories.addEventListener("click", (e) => {
@@ -206,7 +211,7 @@ VanillaTilt.init(document.querySelectorAll(".card"), {
     scale: 1.02,
     glare: true,
     "max-glare": 0.6,
-    perspective: 300,
+    perspective: 800,
     easing: "cubic-bezier(.03,.98,.52,.99)",
     reset: true,
     transition: true,

@@ -4,7 +4,7 @@
   --text-color: hsl(0, 0%, 35%);
   --body-color: hsl(0, 0%, 95%);
   --container-color: hsl(0, 0%, 100%);
-  --body-font: "Poppins", sens-serif;
+  --body-font: "Montserrat", sans-serif;
   --h2-font-size: 1.25rem;
   --small-font-size: 0.813rem;
   --white-text: #ffffff;
@@ -50,8 +50,8 @@ footer .footer-row {
 
 .footer-col .footer-heading {
   margin-bottom: 1.5rem;
-  font-size: 1.25rem;
-  font-family: "Pooppins", sans-serif;
+  font-size: 1.35rem;
+  font-family: var(--body-font);
 }
 
 .footerLinks {
@@ -66,7 +66,8 @@ footer .footer-row {
   text-decoration: none;
   color: var(--black-text);
   font-weight: 400;
-  font-family: "Pooppins", sans-serif;
+  font-size: 1.1rem;
+  font-family: var(--body-font);
   transition: transform 0.5s;
   position: relative;
 }

@@ -579,7 +579,7 @@ header {
 .card_description {
   display: block;
   font-size: large;
-  font-family: "Sorts Mill Goudy", serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 0.25rem;
   text-align: center;
 }
@@ -605,7 +605,7 @@ header {
   background-color: var(--brown-color);
   box-shadow: 0 20px 24px gray;
   border: none;
-  font-family: "Sorts Mill Goudy", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .pitch {
@@ -621,7 +621,7 @@ header {
 
 .hand .pitch p {
   font-size: 2rem;
-  font-family: "Sorts Mill Goudy", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   letter-spacing: 0.2rem;
   text-align: center;
@@ -824,7 +824,7 @@ header {
 /* feature products */
 .feature_products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
 }
 
 .card {

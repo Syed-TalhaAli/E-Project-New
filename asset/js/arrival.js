@@ -158,8 +158,8 @@ function openArrivalProduct(id = null) {
       </div>
     </div>
     <div class="gallery_controls">
-      <button onClick='prevProductSlide(${product.id})'>&#60;</button>
-      <button onClick='nextProductSlide(${product.id})'>&#62;</button>
+      <button onClick='prevProductSlide(${product.id})'>&#10094;</button>
+      <button onClick='nextProductSlide(${product.id})'>&#10095;</button>
     </div>`;
 }
 
