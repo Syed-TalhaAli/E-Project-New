@@ -22,21 +22,6 @@
   }
 }
 
-/* @media (max-width: 800px) {
-  .noneBigVideo {
-    display: none !important;
-  }
-
-  .smVideo {
-    display: block !important;
-    object-fit: contain;
-  }
-  .main-screen_sec {
-    width: 100%;
-    height: calc(0);
-  }
-
-} */
 
 @media (min-width: 1129px) and (max-width: 1210px) {
   .sections_heading {
@@ -381,6 +366,7 @@
     top: 0;
     width: 70%;
     height: 100svh;
+    background: var(--black-text);
   }
 
   .navbar nav {
@@ -517,7 +503,7 @@
     top: 0;
     width: 90%;
     height: 100svh;
-    background: var(--brown-color);
+    background: var(--black-text);
   }
 
   .cart i {
@@ -899,6 +885,9 @@
 @media (min-width: 250px) and (max-width: 500px) {
   .about-us-detail-grid {
     grid-template-columns: 1fr;
+  }
+  .about-heading {
+    height: auto;
   }
 }
 

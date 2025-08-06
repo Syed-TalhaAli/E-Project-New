@@ -1,4 +1,4 @@
-// cursor
+// cursor js
 const wrapper = document.querySelector(".wrapper");
 const cursor = document.querySelector(".cursor");
 
@@ -25,7 +25,6 @@ function animate() {
 }
 
 animate();
-
 // cursor end
 
 // collection wrappper
@@ -74,132 +73,11 @@ items.forEach((item) => {
             productImage.src = images[type];
             collection_card2.classList.add("smoothActive");
         }, 10);
+
     });
 });
 
 
-// // slide videos
-// const videos = document.querySelectorAll(".slide-container video");
-// const nextBtn = document.querySelector(".nextBtn");
-// const prevBtn = document.querySelector(".prevBtn");
-// const dots = document.querySelectorAll(".dot");
-// let counter = 0;
-
-
-// function updateSlide(index, shouldRestart = false) {
-//     videos.forEach((vid, i) => {
-//         vid.pause();
-//         if (shouldRestart || i !== index) {
-//             vid.currentTime = 0;
-//         }
-//         vid.classList.remove("active");
-//         dots[i].classList.remove("active");
-//     });
-
-//     videos[index].classList.add("active");
-//     dots[index].classList.add("active");
-//     videos[index].play();
-// }
-
-// function goPrev() {
-//     counter = (counter - 1 + videos.length) % videos.length;
-//     updateSlide(counter);
-// }
-
-// function goNext() {
-//     counter = (counter + 1 + videos.length) % videos.length;
-//     updateSlide(counter);
-// }
-
-
-// nextBtn.addEventListener("click", () => {
-//     goNext();
-//     resetVideoAutoSlide();
-// });
-
-// prevBtn.addEventListener("click", () => {
-//     goPrev();
-//     resetVideoAutoSlide();
-// });
-
-// dots.forEach((dot) => {
-//     dot.addEventListener("click", () => {
-//         counter = parseInt(dot.getAttribute("data-index"));
-//         updateSlide(counter, true);
-//         resetVideoAutoSlide();
-//     });
-// });
-
-// let videoAutoSlide = setInterval(goNext, 5000);
-
-// function resetVideoAutoSlide() {
-//     clearInterval(videoAutoSlide);
-//     videoAutoSlide = setInterval(goNext, 5000);
-// }
-
-// Select only the main slider videos
-// const videos = document.querySelectorAll(".slider-video");
-// const nextBtn = document.querySelector(".nextBtn");
-// const prevBtn = document.querySelector(".prevBtn");
-// const dots = document.querySelectorAll(".dot");
-// let counter = 0;
-
-// function updateSlide(index, shouldRestart = false) {
-//   videos.forEach((vid, i) => {
-//     vid.pause();
-//     if (shouldRestart || i !== index) {
-//       vid.currentTime = 0;
-//     }
-//     vid.classList.remove("active");
-
-//     if (dots[i]) {
-//       dots[i].classList.remove("active");
-//     }
-//   });
-
-//   videos[index].classList.add("active");
-
-//   if (dots[index]) {
-//     dots[index].classList.add("active");
-//   }
-
-//   videos[index].play();
-// }
-
-// function goPrev() {
-//   counter = (counter - 1 + videos.length) % videos.length;
-//   updateSlide(counter);
-// }
-
-// function goNext() {
-//   counter = (counter + 1) % videos.length;
-//   updateSlide(counter);
-// }
-
-// nextBtn.addEventListener("click", () => {
-//   goNext();
-//   resetVideoAutoSlide();
-// });
-
-// prevBtn.addEventListener("click", () => {
-//   goPrev();
-//   resetVideoAutoSlide();
-// });
-
-// dots.forEach((dot) => {
-//   dot.addEventListener("click", () => {
-//     counter = parseInt(dot.getAttribute("data-index"));
-//     updateSlide(counter, true);
-//     resetVideoAutoSlide();
-//   });
-// });
-
-// let videoAutoSlide = setInterval(goNext, 5000);
-
-// function resetVideoAutoSlide() {
-//   clearInterval(videoAutoSlide);
-//   videoAutoSlide = setInterval(goNext, 5000);
-// }
 // Select only videos from big screen slider
 const videos = document.querySelectorAll(".bigScreen .slider-video");
 const nextBtn = document.querySelector(".nextBtn");
@@ -227,7 +105,7 @@ function updateSlide(index, shouldRestart = false) {
   videos[index].play();
 }
 
-// Navigation
+
 function goPrev() {
   counter = (counter - 1 + videos.length) % videos.length;
   updateSlide(counter);
@@ -238,7 +116,7 @@ function goNext() {
   updateSlide(counter);
 }
 
-// Events
+
 nextBtn.addEventListener("click", () => {
   goNext();
   resetVideoAutoSlide();
@@ -257,7 +135,6 @@ dots.forEach((dot) => {
   });
 });
 
-// Auto-slide every 5 seconds
 let videoAutoSlide = setInterval(goNext, 5000);
 
 function resetVideoAutoSlide() {
@@ -373,16 +250,13 @@ function renderCategory(category) {
     });
 }
 
-// Event listeners for category clicks
 categoryLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
         e.preventDefault();
 
-        // Remove 'active' from all, add to clicked one
         categoryLinks.forEach((l) => l.classList.remove("active"));
         link.classList.add("active");
 
-        // Load products for selected category
         const selectedCategory = link.getAttribute("data-category");
         renderCategory(selectedCategory);
     });
@@ -394,13 +268,10 @@ categoryLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
         e.preventDefault();
 
-        // Remove 'active' class from all links
         categoryLinks.forEach((l) => l.classList.remove("active"));
 
-        // Add 'active' class to the clicked one
         link.classList.add("active");
 
-        // Load the relevant category
         const selectedCategory = link.getAttribute("data-category");
         renderCategory(selectedCategory);
     });

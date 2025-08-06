@@ -472,7 +472,8 @@ header {
     display: block;
     object-fit: contain;
     position: relative;
-    height: auto;
+    inset: 0;
+    height: 100%;
   }
 
   .nextBtn,
@@ -486,6 +487,7 @@ header {
     height: 10px;
   }
 }
+
 /* Hero-Section-End */
 
 /* Category-Section-Start */
